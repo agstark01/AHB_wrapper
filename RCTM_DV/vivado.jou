@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Aug  5 00:43:03 2026
+# Process ID         : 1116806
+# Current directory  : /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV
+# Command line       : vivado
+# Log file           : /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/vivado.log
+# Journal file       : /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/vivado.jou
+# Running On         : vlsi-srv.iitbbs.ac.in
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux 9.6 (Plow)
+# Processor Detail   : INTEL(R) XEON(R) GOLD 5520+
+# CPU Frequency      : 2200.000 MHz
+# CPU Physical cores : 56
+# CPU Logical cores  : 112
+# Host memory        : 403875 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 408170 MB
+# Available Virtual  : 365126 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/23EC01002/patch-4/wrapper/wrapper.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source class_top_tb.tcl
+close_sim
+close_project
+create_project after_vac_wrapper /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper -part xc7vx485tffg1157-1
+add_files -norecurse /home/23EC01002/aftervac/wrapper.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/23EC01002/aftervac/wrapper_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+remove_files  -fileset sim_1 /home/23EC01002/aftervac/wrapper_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/23EC01002/aftervac/wrapper_tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_ahb_ip_wrapper_dma_irq.tcl
+close_sim
+launch_simulation
+source tb_ahb_ip_wrapper_dma_irq.tcl

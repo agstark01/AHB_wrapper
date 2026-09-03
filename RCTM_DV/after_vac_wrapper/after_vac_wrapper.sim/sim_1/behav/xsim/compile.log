@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/23EC01002/aftervac/wrapper_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ahb_ip_wrapper_dma_irq
+WARNING: [VRFC 10-3824] variable 'last_flag' must explicitly be declared as automatic or static [/home/23EC01002/aftervac/wrapper_tb.sv:240]

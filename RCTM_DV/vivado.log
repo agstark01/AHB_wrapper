@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Aug  5 00:43:03 2026
+# Process ID         : 1116806
+# Current directory  : /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV
+# Command line       : vivado
+# Log file           : /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/vivado.log
+# Journal file       : /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/vivado.jou
+# Running On         : vlsi-srv.iitbbs.ac.in
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux 9.6 (Plow)
+# Processor Detail   : INTEL(R) XEON(R) GOLD 5520+
+# CPU Frequency      : 2200.000 MHz
+# CPU Physical cores : 56
+# CPU Logical cores  : 112
+# Host memory        : 403875 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 408170 MB
+# Available Virtual  : 365126 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/23EC01002/patch-4/wrapper/wrapper.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/23EC01002/patch-4/wrapper/wrapper.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cad/xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'class_top_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/23EC01002/patch-4/wrapper/wrapper.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/cad/xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'class_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/23EC01002/patch-4/wrapper/wrapper.sim/sim_1/behav/xsim/images.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/23EC01002/patch-4/wrapper/wrapper.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj class_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Convolution
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module class_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_arch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_enable_generation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_en
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module remapunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module weight_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module class_top_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/23EC01002/patch-4/wrapper/wrapper.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot class_top_tb_behav xil_defaultlib.class_top_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /cad/xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot class_top_tb_behav xil_defaultlib.class_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.my_buffer(BUF_WIDTH=30)
+Compiling module xil_defaultlib.processor_en
+Compiling module xil_defaultlib.addr_gen
+Compiling module xil_defaultlib.remapunit
+Compiling module xil_defaultlib.weight_adder
+Compiling module xil_defaultlib.conv_enable_generation
+Compiling module xil_defaultlib.Convolution
+Compiling module xil_defaultlib.conv_arch(IMG_WIDTH=28,IMG_HEIGH...
+Compiling module xil_defaultlib.top(CLAUSEN=140,CLAUSE_WIDTH=182...
+Compiling module xil_defaultlib.class_top_default
+Compiling module xil_defaultlib.class_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot class_top_tb_behav
+execute_script: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 8132.078 ; gain = 0.000 ; free physical = 286185 ; free virtual = 346916
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/23EC01002/patch-4/wrapper/wrapper.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "class_top_tb_behav -key {Behavioral:sim_1:Functional:class_top_tb} -tclbatch {class_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source class_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 8217.449 ; gain = 36.422 ; free physical = 285993 ; free virtual = 346718
+# run 1000000
+Received 3 tready pulses
+Success:       1, Fail:       5
+$finish called at time : 18325 ns : File "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v" Line 92
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 8251.203 ; gain = 33.754 ; free physical = 285998 ; free virtual = 346717
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 8255.914 ; gain = 123.836 ; free physical = 285991 ; free virtual = 346710
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'class_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 8255.914 ; gain = 123.836 ; free physical = 285991 ; free virtual = 346710
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /cad/xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 508720 KB (Peak: 561160 KB), Simulation CPU Usage: 6880 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project after_vac_wrapper /home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cad/xilinx/Vivado/2024.2/data/ip'.
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 8371.695 ; gain = 0.000 ; free physical = 275204 ; free virtual = 335905
+add_files -norecurse /home/23EC01002/aftervac/wrapper.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/23EC01002/aftervac/wrapper_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+remove_files  -fileset sim_1 /home/23EC01002/aftervac/wrapper_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/23EC01002/aftervac/wrapper_tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_ahb_ip_wrapper_dma_irq'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/cad/xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ahb_ip_wrapper_dma_irq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_ahb_ip_wrapper_dma_irq_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/aftervac/wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_ip_wrapper_dma_irq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/23EC01002/aftervac/wrapper_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ahb_ip_wrapper_dma_irq
+WARNING: [VRFC 10-3824] variable 'last_flag' must explicitly be declared as automatic or static [/home/23EC01002/aftervac/wrapper_tb.sv:124]
+WARNING: [VRFC 10-3824] variable 'is_last' must explicitly be declared as automatic or static [/home/23EC01002/aftervac/wrapper_tb.sv:213]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ahb_ip_wrapper_dma_irq_behav xil_defaultlib.tb_ahb_ip_wrapper_dma_irq xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /cad/xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ahb_ip_wrapper_dma_irq_behav xil_defaultlib.tb_ahb_ip_wrapper_dma_irq xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [/home/23EC01002/aftervac/wrapper_tb.sv:44]
+WARNING: [VRFC 10-3705] select index 6 into 'image_cnt' is out of bounds [/home/23EC01002/aftervac/wrapper.v:113]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/23EC01002/aftervac/wrapper.v" Line 1. Module ahb_ip_wrapper_dma_irq doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/23EC01002/aftervac/wrapper.v" Line 1. Module ahb_ip_wrapper_dma_irq doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ahb_ip_wrapper_dma_irq
+Compiling module xil_defaultlib.tb_ahb_ip_wrapper_dma_irq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_ahb_ip_wrapper_dma_irq_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ahb_ip_wrapper_dma_irq_behav -key {Behavioral:sim_1:Functional:tb_ahb_ip_wrapper_dma_irq} -tclbatch {tb_ahb_ip_wrapper_dma_irq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_ahb_ip_wrapper_dma_irq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:05 . Memory (MB): peak = 8440.719 ; gain = 9.035 ; free physical = 279419 ; free virtual = 340659
+# run 1000ns
+
+=================================================
+[CPU] Phase 1: Model Parameter & Error Logic Test
+=================================================
+ -> FAIL: irq_error did not fire.
+[CPU] Clearing Error Flag using CTRL_SET...
+ -> SUCCESS: Error flag cleared successfully!
+
+=================================================
+[CPU] Phase 2: Start IP & Enable Interrupts
+=================================================
+ -> SUCCESS: irq_key128 is HIGH (Asking CPU for data).
+
+=================================================
+[CPU/DMA] Phase 3: Switch to DMA and pump data
+=================================================
+ -> SUCCESS: IRQ suppressed. DMA Request is now HIGH.
+[DMAC] Streaming 150 batches of Data...
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 8440.719 ; gain = 61.879 ; free physical = 279428 ; free virtual = 340668
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ahb_ip_wrapper_dma_irq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 8440.719 ; gain = 61.879 ; free physical = 279428 ; free virtual = 340668
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 475016 KB (Peak: 532288 KB), Simulation CPU Usage: 780 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_ahb_ip_wrapper_dma_irq'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/cad/xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ahb_ip_wrapper_dma_irq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_ahb_ip_wrapper_dma_irq_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/23EC01002/aftervac/wrapper_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ahb_ip_wrapper_dma_irq
+WARNING: [VRFC 10-3824] variable 'last_flag' must explicitly be declared as automatic or static [/home/23EC01002/aftervac/wrapper_tb.sv:124]
+WARNING: [VRFC 10-3824] variable 'is_last' must explicitly be declared as automatic or static [/home/23EC01002/aftervac/wrapper_tb.sv:215]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ahb_ip_wrapper_dma_irq_behav xil_defaultlib.tb_ahb_ip_wrapper_dma_irq xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /cad/xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ahb_ip_wrapper_dma_irq_behav xil_defaultlib.tb_ahb_ip_wrapper_dma_irq xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [/home/23EC01002/aftervac/wrapper_tb.sv:44]
+WARNING: [VRFC 10-3705] select index 6 into 'image_cnt' is out of bounds [/home/23EC01002/aftervac/wrapper.v:113]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/23EC01002/aftervac/wrapper.v" Line 1. Module ahb_ip_wrapper_dma_irq doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/23EC01002/aftervac/wrapper.v" Line 1. Module ahb_ip_wrapper_dma_irq doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ahb_ip_wrapper_dma_irq
+Compiling module xil_defaultlib.tb_ahb_ip_wrapper_dma_irq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_ahb_ip_wrapper_dma_irq_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/23EC01002/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ahb_ip_wrapper_dma_irq_behav -key {Behavioral:sim_1:Functional:tb_ahb_ip_wrapper_dma_irq} -tclbatch {tb_ahb_ip_wrapper_dma_irq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_ahb_ip_wrapper_dma_irq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:08 . Memory (MB): peak = 8506.766 ; gain = 0.000 ; free physical = 283690 ; free virtual = 344893
+# run 1000ns
+
+=================================================
+[CPU] Phase 1: Model Parameter & Error Logic Test
+=================================================
+ -> FAIL: irq_error did not fire.
+[CPU] Clearing Error Flag using CTRL_SET...
+ -> SUCCESS: Error flag cleared successfully!
+
+=================================================
+[CPU] Phase 2: Start IP & Enable Interrupts
+=================================================
+ -> SUCCESS: irq_key128 is HIGH (Asking CPU for data).
+
+=================================================
+[CPU/DMA] Phase 3: Switch to DMA and pump data
+=================================================
+ -> SUCCESS: IRQ suppressed. DMA Request is now HIGH.
+[DMAC] Streaming 150 batches of Data...
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 8506.766 ; gain = 0.000 ; free physical = 283699 ; free virtual = 344902
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ahb_ip_wrapper_dma_irq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 8506.766 ; gain = 0.000 ; free physical = 283699 ; free virtual = 344902
+INFO: xsimkernel Simulation Memory Usage: 475028 KB (Peak: 532300 KB), Simulation CPU Usage: 820 ms
