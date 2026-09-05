@@ -110,7 +110,7 @@ module ahb_ip_wrapper_dma_irq (
 
     reg [7:0] clause_cnt; 
     reg [5:0] weight_cnt; 
-    reg [5:0] image_cnt;  
+    reg [5:0] image_cnt ;  
     reg [7:0] clause_mask;
     reg [7:0] weight_mask;
     reg       image_mask;
@@ -121,7 +121,7 @@ module ahb_ip_wrapper_dma_irq (
 
     wire clause_done  = (model_written)&(clause_cnt >= (model_parameter[13:6]));
     wire weight_done  = (model_written)&((weight_cnt >= (model_parameter[17:14]*5)));  // model_params[17:14]
-    wire image_done   = (image_cnt >= 32);
+    wire image_done   = (image_cnt >= 6'd32);
 
     // assinging image address same as image count for simplicity
     assign x_imag_addr = image_cnt[6:0];
@@ -223,8 +223,8 @@ module ahb_ip_wrapper_dma_irq (
                         image_reg  <= ahb_hwdata;
                         image_mask <= 1'b1;
                        // if (image_done) error_flag <= 1'b1;
-                    if (!image_done)  image_cnt  <= image_cnt + 1;
-                    else if (image_cnt >= 32) image_cnt <= 7'b01; // Prevent overflow
+                    if ((!image_done) )  image_cnt  <= image_cnt + 1;
+                    else if (image_cnt >= 6'd32) image_cnt <= 6'b01; // Prevent overflow
                     end
                 end else begin
                 if (sel_clause) begin
@@ -291,8 +291,8 @@ module ahb_ip_wrapper_dma_irq (
             end else begin
             	if(!stream_state)
                 	init_done <= 1'b0;
-                else
-                	init_done <= 1'b1;
+//                else
+//                	init_done <= 1'b1;
             end
         end
     end
@@ -365,7 +365,7 @@ module ahb_ip_wrapper_dma_irq (
     .init_done(init_done),
     .tdata(imagedata),
     .model_params(model_parameter),
-    .x_w({1'b0,image_cnt}),
+    .x_w({1'b0,((image_cnt))}),
     .resetessen({!all_finished,!image_done}),// size have to decreased !
     .clause_write(clause_write),
     .weight_write(weight_write),

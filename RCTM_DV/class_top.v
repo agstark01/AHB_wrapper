@@ -42,7 +42,7 @@ module class_top#(
     output reg tready
 );
     wire img_rst;
-    reg [6:0] x; // find x_w
+    wire [6:0] x; // find x_w
     wire img_done_wire;
     wire [31:0] total_img;
     wire [2:0] stride;
@@ -84,7 +84,7 @@ module class_top#(
     assign bram_img_addr_w = img_bram;
     assign clause      = model_params[13:6];
     assign rstb = i_rst_n;
-    assign clause2 = clause + 2;
+    assign clause2 = clause; // add + 2
     assign classes     = model_params[17:14];
     assign img_rst     =  img_done_wire ; // i have changed it; after OR;
     assign total_img   = tdata;
@@ -98,7 +98,9 @@ module class_top#(
     reg valid_addr;
     assign bram_addr_a_wire  = bram_addr_a;
     assign bram_addr_a2_wire = bram_addr_a2;
-    assign weight_limit = classes * 5 + 2;
+    assign weight_limit = classes * 5 ; // add + 2
+    
+    assign x = x_w;
     reg p0,p1,p2,p3,p4,p5,p6,p7;
     reg [14:0] bram_addr_a_nxt;
     reg [14:0] bram_addr_a2_nxt;
@@ -120,10 +122,10 @@ module class_top#(
     
     always @(posedge clk or negedge i_rst_n) begin
         if (!i_rst_n) begin
-            bram_addr_a  <= 1;
-            x <= 0;
+            bram_addr_a  <= 0;
+          //  x <= 0;
             img_bram <= 0;
-            bram_addr_a2 <= 2;
+            bram_addr_a2 <= 0;
             img_count <= 0;
         end
         else begin
@@ -131,7 +133,7 @@ module class_top#(
                img_count <= img_count_nxt;
                bram_addr_a  <= bram_addr_a_nxt;
                bram_addr_a2 <= bram_addr_a2_nxt;
-               x <= x_w;
+//               x <= x_w;
              end
     end
 
@@ -343,8 +345,9 @@ end
                     
                     if (!(img_rst || !reset)) begin
                         for (i = 0; i < 32; i = i + 1) begin
-                            total_memory[((x) << 5) + i] <= total_img[i];
+                            total_memory[((x - 1'd1) << 5) + i] <= total_img[i];
                         end
+                       // total_memory[((x) << 5) +: 32] <= total_img;
                     end
                     if (x == 7'd32) begin
                         img_load_done <= 1;
