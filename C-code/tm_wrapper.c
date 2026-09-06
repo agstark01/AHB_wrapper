@@ -65,6 +65,8 @@ static tm_status_t     g_last_error   = TM_OK;
 static volatile uint8_t g_async_ready = 0;
 static volatile uint8_t g_async_error = 0;
 static volatile uint8_t g_async_result = 0;
+static volatile uint8_t results_out[4];
+static volatile uint32_t global_counter = 0;
 
 /* ------------------------------------------------------------------
  * Bring-up
@@ -78,7 +80,7 @@ void tm_wrapper_present(void)
     uint32_t ID_marker2 = TM_REG(TM_OFF_CoTM_MARKER);
     printchar(ID_marker);
     printchar(ID_marker2);
-    printf("/n");
+    printf("\n");
 
     // return (ID_marker == TM_MARKER_DRQ_EN) && (ID_marker2 == TM_MARKER_IRQ_EN);
 }
@@ -87,7 +89,7 @@ tm_status_t tm_wrapper_reset(void)
 {
     /* Assert: core held in reset, session state continuously pinned to
      * its cleared values for as long as IP_RST stays 1. */
-    TM_CTRL_SET = TM_CTRL_IP_RST;
+    TM_CTRL = 1;
 
     /* IP_RST is level-held (R3), not self-clearing -- no polling is
      * needed here for hardware to "finish" the reset on its own. The
@@ -101,7 +103,7 @@ tm_status_t tm_wrapper_reset(void)
      * assert write to land before continuing. */
 
     /* Deassert: core released, session state now clean. */
-    TM_CTRL_CLR = TM_CTRL_IP_RST;
+    TM_CTRL = 0;
 
     /* Sanity check - session state should now read as freshly cleared. */
     if (TM_STATUS & (TM_STATUS_MODEL_WR | TM_STATUS_ALL_DONE)) {
@@ -150,13 +152,15 @@ tm_status_t tm_wrapper_load_model(uint8_t clause_rows, uint8_t weight_rows,
     for (row = 0; row < clause_rows; row++) {
         for (w = 0; w < TM_MODEL_ROW_STRIDE_WORDS; w++) {
             TM_CLAUSE(w) = clauses[row * TM_MODEL_ROW_STRIDE_WORDS + w];
-            printf(" clause no: %d\n",row );
+           
         }
+         // printf(" clause no: %d\n",row );
         if( row < weight_rows){
         for (w = 0; w < TM_MODEL_ROW_STRIDE_WORDS; w++) {
             TM_WEIGHT(w) = weights[row * TM_MODEL_ROW_STRIDE_WORDS + w];
-            printf(" weight no: %d\n",row);
+            
         }
+       // printf(" weight no: %d\n",row);
         }
     }
 
@@ -196,6 +200,7 @@ uint8_t tm_wrapper_classify_blocking(const uint32_t *image_word)
 
     for (int ii = 0; ii < 32; ii++) {
             TM_IMAGE_DATA = image_word[ii];
+            printf("%x \n" ,  TM_REG(0x4c)); //reading what is last written
         }
 
     /* No explicit "busy" or "one classification complete" bit is
@@ -317,8 +322,44 @@ int tm_wrapper_poll_async_result(uint8_t *result_out, int *is_error_out)
     return 1;
 }
 
+void EXP3_Handler(void)
+{
+  // AES128 interrupt is caused by Error IRQ
+  /*
+  aes_err_irq_occurred ++;
+  AES128->IRQ_MSK_CLR = AES128_ERR_REQ_BIT;
+  if (aes_err_irq_expected==0) {
+    puts ("ERROR : Unexpected AES128 Error interrupt occurred.\n");
+    UartEndSimulation();
+    while (1);
+    }*/
+    
+        uint32_t status = TM_STATUS;   /* this read also serves as error_ack */
+
+    if (status & TM_STATUS_ERROR) {
+        g_async_error  = 1;
+        g_async_ready  = 1;
+
+        /* STATUS read above only deasserts irq_merged's error half; it
+         * does NOT clear error_flag itself. Clear it explicitly so the
+         * peripheral can resume normal operation. */
+        TM_CTRL_SET = TM_CTRL_ERR_CLR;
+        return;
+    }
+
+    /* Reading RESULT both retrieves the answer and acknowledges the
+     * pending-result condition (clears ip_computation_done_r). */
+     puts(" interrupt read");
+    results_out[global_counter++] = (uint8_t)(TM_RESULT & 0xFu);
+    g_async_ready  = 1;
+    
+    
+}
+
+
+
 void printchar(uint32_t data){
-	printf("%c%c%c%c",
+	puts("%c%c%c%c",
        (char)((data >> 24) & 0xFF),
        (char)((data >> 16) & 0xFF),
        (char)((data >> 8) & 0xFF),
@@ -329,32 +370,32 @@ int main() {
 
     UartStdOutInit();
 
-    printf("1st run \n");
+   // printf("1st run \n");
     tm_wrapper_present();
-     printf("\n 2nd run \n");
+ //    printf("\n 2nd run \n");
     if (tm_wrapper_reset() != TM_OK) {
         return tm_wrapper_reset();
     }
-  printf("\n3rd run \n");
+ // printf("\n3rd run \n");
     // check if the model is loaded successfully
     tm_status_t loadcheck = tm_wrapper_load_model(140, 50, tm_model_clause_words, tm_model_weight_words);
- printf("\n 4th run \n");
+// printf("\n 4th run \n");
     if (loadcheck != TM_OK) {
         return loadcheck;
     }
- printf("\n 4th run \n");
+ puts("\n 4_2th run \n");
     // image streaming and classification
-    uint8_t results_out[4];
-
-    tm_status_t imagecheck = tm_wrapper_classify_batch(tm_model_image_words, 4, results_out);
+    //uint8_t results_out[4];
+   
+    tm_status_t imagecheck = tm_wrapper_classify_batch(tm_model_image_words, 1, results_out);
     
- printf("\n 5th run \n");
+ //printf("\n 5th run \n");
     if(imagecheck != TM_OK){
         return imagecheck;
     }
- printf("\n 6th run \n");
-    for(int i = 0; i < 4; i++){
-        printf("Result for image %d: %d\n", i, results_out[i]);
+ puts("\n 6th run \n");
+    for(int i = 0; i < 1; i++){
+        puts("Result for image %d: %d\n", i, results_out[i]);
     }
     //printf("hello \n");
     
