@@ -148,6 +148,7 @@ module ahb_ip_wrapper_dma_irq (
     wire error_ack;
     
     reg ip_computation_done_r;
+    reg [31:0] last_write, last_addr;
     // ---------------------------------------------------------
     // 3. Write Handlers & Register Aliasing Logic
     // ---------------------------------------------------------
@@ -218,6 +219,11 @@ module ahb_ip_wrapper_dma_irq (
 
             // --- 3C. Data Capture ---
             if (wcyc_r) begin
+            
+            // for debugging
+            	last_write <= ahb_hwdata;
+            	
+            	
                   if (stream_state) begin
                     if (sel_image) begin
                         image_reg  <= ahb_hwdata;
@@ -340,15 +346,17 @@ module ahb_ip_wrapper_dma_irq (
     always @(*) begin
         if (ahb_hsel_r & rcyc_r) begin
             case (ahb_haddr16_r[7:0])
-                8'h48: ahb_hrdata = {9'd0, 
+                8'h48: ahb_hrdata = {8'd0, stream_state,
                                  weight_cnt, ip_computation_done_r,
                                  clause_cnt, 
                                  error_flag, model_written, all_finished, 
                                  image_done, weight_done, clause_done};
-                8'h4C: ahb_hrdata = {30'b11111111111111111111,ahb_haddr16_r[7:0],2'b00, control}; // this is just kept for testing
+                8'h4C: ahb_hrdata = last_write; // this is just kept for debugging
+                8'h50: ahb_hrdata = {16'd0,last_addr};
                 8'h58: ahb_hrdata = 32'h52_43_6F_6E; // RCon
                 8'h64: ahb_hrdata = 32'h43_6F_54_4D; // CoTM  ID
                 8'h70: ahb_hrdata = {28'b0,ip_final_answer};
+              
                 //8'h78: ahb_hrdata = 32'h52_43_6F_6E;
                 default: ahb_hrdata = 32'hbad0bad0;
             endcase
