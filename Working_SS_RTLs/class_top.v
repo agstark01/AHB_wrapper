@@ -27,25 +27,28 @@ module class_top#(
     CLAUSE_WIDTH = (35 + HEIGHT + WIDTH)*2
 )(  
     input clk,
-    input rt, i_rst_n,
-    input stop,
-    input [18:0] model_params,
-    input [127:0] tdata,
+   // input rt,
+    input i_rst_n,
+    input init_done,
+    input [17:0] model_params,
+    input [31:0] tdata,
     input [255:0] clause_write,
     input [255:0] weight_write,
-    input tvalid,
-    input [15:0] tkeep,
-    input tlast,
+    input [1:0] resetessen;
+   // input tvalid,
+   // input [15:0] tkeep,
+    // input tlast,
     output reg [14:0] bram_addr_a,
     output reg [14:0] bram_addr_a2,
     output reg tready,
-    output enb,
+    // output enb,
     output reg [3:0] output_params,
-    output reg [31:0] web,
-    output reg [255:0] dinb,
-    output wire img_done
+    // output reg [31:0] web,
+    // output reg [255:0] dinb,
+    // output wire img_done
 );
-    wire img_rst, rst;
+    wire img_rst;
+    //rst;
     integer x;
     wire [127:0] total_img;
     wire [2:0] stride;
@@ -81,18 +84,22 @@ module class_top#(
     wire [4:0] img_wide;
 
     assign img_wide    = WIDTH;
-    assign clause      = model_params[14:6];
-    assign classes     = model_params[18:15];
-    assign img_rst     = rst ? 1 : img_done_wire;
-    assign enb         = 1;
+    assign clause      = model_params[13:6];
+    assign classes     = model_params[17:14];
+   //     assign img_rst     = rst ? 1 : img_done_wire;
+     assign img_rst     = img_done_wire;
+
+    // assign enb         = 1;
     assign total_img   = tdata;
-    assign rst         = rt | stop;
+  //  assign rst         = rt | init_done;
     assign patch_size  = model_params[2:0];
     assign stride      = model_params[5:3];
-    assign wea         = stop ? 1'b1 : (bram_addr_a  < {{6{1'b0}}, clause}) ? 1'b1 : 1'b0;
-    assign wea2        = stop ? 1'b1 : (bram_addr_a2 < classes * 5)         ? 1'b1 : 1'b0;
-    assign reset       = wea || rst || !img_load_done || wea2;
-    assign img_done    = img_done_wire;
+    assign wea         = init_done ? 1'b1 : (bram_addr_a  < {{6{1'b0}}, clause}) ? 1'b1 : 1'b0;
+    assign wea2        = init_done ? 1'b1 : (bram_addr_a2 < classes * 5)         ? 1'b1 : 1'b0;
+    //assign reset       = wea || rst || !img_load_done || wea2;
+    assign reset       =  resetessen[1] || resetessen[0];
+
+    // assign img_done    = img_done_wire;
 
     reg [9:0] addr0,addr1,addr2,addr3,addr4,addr5,addr6,addr7;
     reg valid_addr;
@@ -106,21 +113,23 @@ module class_top#(
     // ------------------------------------------------------------
     always @(posedge clk or negedge i_rst_n) begin
         if (!i_rst_n) begin
-            web          <= 4'b0;
-            dinb         <= 32'b0;
+            // web          <= 4'b0;
+            // dinb         <= 32'b0;
             i            <= 0;
             bram_addr_a  <= 0;
             bram_addr_a2 <= 0;
         end
-        else begin
-            if (rst) begin
-                web          <= 4'b0;
-                dinb         <= 32'b0;
-                i            <= 0;
-                bram_addr_a  <= 0;
-                bram_addr_a2 <= 0;
-            end
-            else begin
+        else 
+        // begin
+        //     if (rst) begin
+        //         web          <= 4'b0;
+        //         dinb         <= 32'b0;
+        //         i            <= 0;
+        //         bram_addr_a  <= 0;
+        //         bram_addr_a2 <= 0;
+        //     end
+        //     else 
+            begin
                 if (wea || wea2) begin
                     bram_addr_a2 <= wea2 ? bram_addr_a2 + 1 : bram_addr_a2;
                     bram_addr_a  <= wea  ? bram_addr_a  + 1 : bram_addr_a;
@@ -131,7 +140,7 @@ module class_top#(
                 end
             end
         end
-    end
+    // end
 
     // Buffer instantiation
     buffer #(.BUF_WIDTH(WIDTH+2)) Buf(
@@ -250,76 +259,53 @@ module class_top#(
     // ------------------------------------------------------------
     always @(posedge clk or negedge i_rst_n) begin
         if (!i_rst_n) begin
-            pixel_in     <= 0;
-            shift_enable <= 0;
-        end
-        else begin
-            if (reset) begin
-                pixel_in     <= 0;
-                shift_enable <= 0;
-            end
-            else if (!cycle_change) begin
-                shift_enable <= 1;
-                if (valid_addr)
-                    pixel_in <= {p7,p6,p5,p4,p3,p2,p1,p0};
-                else
-                    pixel_in <= 0;
-            end
-            else shift_enable <= 1;
-        end
-    end
-
-    // ------------------------------------------------------------
-    // Main control  tready, class_op, total_memory, x,
-    //                img_load_done, cycle_count, k, j, output_params
-    // FIX: async reset with i_rst_n
-    // NOTE: original uses rst (not reset) as outer reset here 
-    //       preserved exactly
-    // ------------------------------------------------------------
-    always @(posedge clk or negedge i_rst_n) begin
-        if (!i_rst_n) begin
             tready        <= 0;
             output_params <= 0;
-            x             <= -2;
             img_load_done <= 0;
-            cycle_count   <= 1;
+            cycle_count   <= 6'b1;    // FIX 2: was 1 (preset FF on bit[0]), now 0
             k             <= 0;
             j             <= 0;
             class_op      <= 0;
             total_memory  <= 0;
         end
         else begin
-            if (rst) begin
+        /*    if (rst) begin
                 tready        <= 0;
                 output_params <= 0;
-                x             <= -2;
+                x             <= 6'sd0;   // FIX 1: was -2, now 0
                 img_load_done <= 0;
-                cycle_count   <= 1;
+                cycle_count   <= 1;       // sync reset keeps cycle_count=1 (UNCHANGED)
                 k             <= 0;
                 j             <= 0;
                 class_op      <= 0;
                 total_memory  <= 0;
             end
-            else begin
+            else begin */
+             tready <= img_done_wire;
                 if (img_rst) begin
-                    tready        <= 0;
-                    x             <= -2;
+                 //   tready        <= 0; right now commented
                     img_load_done <= 0;
                 end
                 else begin
-                    tready   <= tvalid && !img_load_done && !wea && !wea2;
+                    //tready   <= !img_load_done && !wea && !wea2;
+                    //tready <= !img_load_done;
+                    // tready <= img_done_wire; moving tready up
                     class_op <= class_op_wire;
 
-                    if (!(img_rst || img_load_done || wea || wea2)) begin
-                        for (i = 0; i < 128; i = i + 1) begin
-                            total_memory[(x << 7) + i] <= total_img[i];
+                    
+                    if (!(img_rst || !reset)) begin
+                        for (i = 0; i < 32; i = i + 1) begin
+                            total_memory[((x - 1'd1) << 5) + i] <= total_img[i];
                         end
-                        x <= x + 1;
+                       // total_memory[((x) << 5) +: 32] <= total_img;
                     end
-
-                    if (x == 7) begin
+                    if (x == 7'd32) begin
                         img_load_done <= 1;
-                        tready        <= 0;
+                      //  tready        <= 0; moving up
+                    end
+                     if (resetessen[0]) begin
+                        img_load_done <= 0;
+                      //  tready        <= 0; moving up
                     end
 
                     if (!reset && !cycle_change) begin
@@ -340,7 +326,6 @@ module class_top#(
                 if (img_done_wire) output_params <= class_op;
                 else               output_params <= output_params;
             end
-        end
     end
 
     // Convolution Engine instantiation
@@ -352,7 +337,7 @@ module class_top#(
         .CLAUSE_WIDTH(CLAUSE_WIDTH)
     ) T (
         .clk(clk),
-        .rst(rst),
+       // .rst(rst),
         .i_rst_n(i_rst_n),
         .img_rst(img_rst),
         .patch_size(patch_size),
