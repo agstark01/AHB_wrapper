@@ -73,7 +73,7 @@ module tb_ahb_ip_wrapper;
     task ahb_write(input [15:0] addr, input [31:0] data);
     begin
         // Address Phase
-        @(posedge ahb_hclk);
+        @(negedge ahb_hclk);
         ahb_hsel    = 1'b1;
         ahb_htrans  = 2'b10; // NONSEQ
         ahb_hwrite  = 1'b1;
@@ -81,13 +81,14 @@ module tb_ahb_ip_wrapper;
         ahb_hready  = 1'b1; 
 
         // Data Phase
-        @(posedge ahb_hclk);
+        @(negedge ahb_hclk);
         ahb_hsel    = 1'b0;
         ahb_htrans  = 2'b00; // IDLE
         ahb_hwdata  = data;
 
         // Wait for slave to be ready
         while (!ahb_hreadyout) @(posedge ahb_hclk);
+        @(negedge ahb_hclk);
     end
     endtask
     
@@ -101,7 +102,7 @@ task ahb_bwrite(
 
     begin
         // First transfer: address/control phase
-        @(posedge ahb_hclk);
+        @(negedge ahb_hclk);
         ahb_hsel     = 1'b1;
         ahb_htrans   = 2'b10;       // NONSEQ
         ahb_hwrite   = 1'b1;
@@ -112,7 +113,7 @@ task ahb_bwrite(
         for (i = 0; i < a; i = i + 1) begin
 
             // Data phase of current transfer
-            @(posedge ahb_hclk);
+            @(negedge ahb_hclk);
             ahb_hwdata = data[i*32 +: 32];
 
             // Address/control phase of NEXT transfer
@@ -135,6 +136,7 @@ task ahb_bwrite(
             while (!ahb_hreadyout)
                 @(posedge ahb_hclk);
         end
+        @(negedge ahb_hclk);
     end
 endtask
     
@@ -147,7 +149,7 @@ endtask
 
     begin
         // First transfer: address/control phase
-        @(posedge ahb_hclk);
+        @(negedge ahb_hclk);
         ahb_hsel     = 1'b1;
         ahb_htrans   = 2'b10;       // NONSEQ
         ahb_hwrite   = 1'b1;
@@ -158,7 +160,7 @@ endtask
         for (i = 0; i < a; i = i + 1) begin
 
             // Data phase of current transfer
-            @(posedge ahb_hclk);
+            @(negedge ahb_hclk);
 //            ahb_hwdata = data[i*32 +: 32];
                  ahb_hwdata = data;
 
@@ -182,6 +184,7 @@ endtask
             while (!ahb_hreadyout)
                 @(posedge ahb_hclk);
         end
+        @(negedge ahb_hclk);
     end
 endtask
     
@@ -257,12 +260,26 @@ integer label= 0;
 //            for (j = 0; j < 8; j = j + 1) begin
 //                ahb_write(16'h0000 + (j * 4), clause_mem[i][32*j +: 32]); 
 //            end
-                ahb_bwrite(16'h0000, 8,clause_mem[i]); 
+                ahb_bwrite(16'h0000, 8,clause_mem[i]);
+            if (i == 0) begin
+                for (j = 0; j < 8; j = j + 1) begin
+                    if (dut.clause_reg[j] !== clause_mem[i][j*32 +: 32])
+                        $fatal(1, "Clause burst word %0d mismatch: expected %08h, got %08h",
+                               j, clause_mem[i][j*32 +: 32], dut.clause_reg[j]);
+                end
+            end
             if ( i < 50) begin
 //            	 for (j = 0; j < 8; j = j + 1) begin
 //                	ahb_write(16'h0020 + (j * 4), (i * 100) + j);
 //            	end
                 ahb_bwrite(16'h0020,8,weight_mem[i]);
+                if (i == 0) begin
+                    for (j = 0; j < 8; j = j + 1) begin
+                        if (dut.weight_reg[j] !== weight_mem[i][j*32 +: 32])
+                            $fatal(1, "Weight burst word %0d mismatch: expected %08h, got %08h",
+                                   j, weight_mem[i][j*32 +: 32], dut.weight_reg[j]);
+                    end
+                end
             end
             
         end

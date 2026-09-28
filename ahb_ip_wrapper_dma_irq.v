@@ -68,6 +68,8 @@ module ahb_ip_wrapper_dma_irq (
             ahb_hwrite_r <= 1'b0;
             ahb_hsel_r   <= 1'b0;
             ahb_htrans_r <= 2'b00;
+            wcyc_r       <= 1'b0;
+            rcyc_r       <= 1'b0;
         end else if (ahb_hready) begin
             // ahb_haddr16_r  <= ahb_haddr16;
             // ahb_hwrite_r <= ahb_hwrite;
