@@ -1,0 +1,86 @@
+/home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/Convolution.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/Convolution.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module Convolution
+
+Top level modules:
+	Convolution
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/class_top.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/class_top.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module class_top
+
+Top level modules:
+	class_top
+
+} {} {}} /home/23EC01002/working_tselinwrapper/tb_ahb_ip_wrapper.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/tb_ahb_ip_wrapper.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module tb_ahb_ip_wrapper
+
+Top level modules:
+	tb_ahb_ip_wrapper
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/processor_en.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/processor_en.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module processor_en
+
+Top level modules:
+	processor_en
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/buffer.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/buffer.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module buffer
+
+Top level modules:
+	buffer
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/remapunit.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/remapunit.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module remapunit
+
+Top level modules:
+	remapunit
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/weight_adder.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/weight_adder.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module weight_adder
+
+Top level modules:
+	weight_adder
+
+} {} {}} /home/23EC01002/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v {2 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module ahb_ip_wrapper_dma_irq
+** Warning: /home/23EC01002/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v(127): (vlog-2697) MSB 6 of part-select into 'image_cnt' is out of bounds.
+
+Top level modules:
+	ahb_ip_wrapper_dma_irq
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/top.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/top.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/conv_arch.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/conv_arch.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module conv_arch
+
+Top level modules:
+	conv_arch
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/addr_gen.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/addr_gen.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module addr_gen
+
+Top level modules:
+	addr_gen
+
+} {} {}} /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/conv_enable_generation.v {1 {vlog -work work -vopt -stats=none /home/23EC01002/working_tselinwrapper/SoC-Design-RConvCoTM/RTLfiles/conv_enable_generation.v
+QuestaSim-64 vlog 2023.4_5 Compiler 2025.06 Jun 12 2025
+-- Compiling module conv_enable_generation
+
+Top level modules:
+	conv_enable_generation
+
+} {} {}}

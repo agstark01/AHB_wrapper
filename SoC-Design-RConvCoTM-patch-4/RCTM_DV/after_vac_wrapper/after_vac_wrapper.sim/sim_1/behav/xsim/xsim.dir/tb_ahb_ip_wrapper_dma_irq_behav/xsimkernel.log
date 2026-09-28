@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_ahb_ip_wrapper_dma_irq_behav/xsimk -simmode gui -wdb tb_ahb_ip_wrapper_dma_irq_behav.wdb -simrunnum 0 -socket 38357
+Design successfully loaded
+Design Loading Memory Usage: 393072 KB (Peak: 393072 KB)
+Design Loading CPU Usage: 780 ms

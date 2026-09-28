@@ -1,0 +1,221 @@
+#!/usr/bin/env python3
+"""
+txt_to_tm_header.py
+
+Converts clause.txt / weight.txt / image.txt into a C header that can be
+linked directly into bare-metal firmware and used with
+tm_wrapper_load_model() / tm_wrapper_classify_blocking().
+
+FILE FORMATS
+------------
+Despite the .txt extension, these files are BINARY text (literal '0'/'1'
+characters), not hex. One value per line:
+
+    clause.txt / weight.txt: 256 characters per line ('0'/'1' only),
+        MSB-first (leftmost character is bit 255, rightmost is bit 0).
+        Row count is checked EXACTLY against --clause-rows /
+        --weight-rows (default 140 / 50, matching the core's
+        clause/weight memory capacity) -- not just an upper bound. A
+        mismatch is an error, not a warning, since a partially-populated
+        model loaded against the wrong MODEL_PARAM row count will
+        silently produce garbage classifications rather than an obvious
+        failure.
+
+    image.txt (optional): 32 characters per line ('0'/'1' only),
+        MSB-first, one AHB write per line. Any number of lines is
+        accepted; there is no fixed capacity check (the streaming path
+        is a 32-word circular window in the RTL, see
+        TM_IMAGE_WINDOW_WORDS in tm_wrapper_regs.h, but the driver can
+        stream more than 32 images across multiple wraps).
+
+WORD ORDERING for clause/weight (read this before trusting the output):
+The wrapper reassembles each 256-bit row as
+    clause_write <= {clause_reg[7], clause_reg[6], ..., clause_reg[0]}
+i.e. the FIRST word written (TM_CLAUSE(0)) becomes the LEAST-significant
+32 bits of the row, and the LAST word written (TM_CLAUSE(7)) becomes the
+MOST-significant 32 bits. This script converts each 256-char binary line
+to a single Python integer and extracts 32-bit words by bit-shifting, so
+word[0] = bits [31:0] and word[7] = bits [255:224] regardless of how the
+line was written out -- no manual chunk-reversal needed (unlike an
+earlier hex-based version of this script).
+
+Usage:
+    python3 txt_to_tm_header.py \
+        --clause clause.txt --weight weight.txt \
+        [--image image.txt] \
+        --out tm_model_data.h
+
+    # Override expected row counts (defaults: 140 clause, 50 weight,
+    # matching the core's full memory capacity):
+    python3 txt_to_tm_header.py \
+        --clause clause.txt --clause-rows 140 \
+        --weight weight.txt --weight-rows 50 \
+        --image image.txt \
+        --out tm_model_data.h
+
+Blank lines and lines starting with '#' are ignored.
+"""
+
+import argparse
+import sys
+
+WORDS_PER_ROW = 8
+CLAUSE_WEIGHT_BIN_CHARS = 256   # 256 bits, literal '0'/'1' characters
+IMAGE_BIN_CHARS = 32            # 32 bits, literal '0'/'1' characters
+WORD_BITS = 32
+WORD_MASK = (1 << WORD_BITS) - 1
+
+DEFAULT_CLAUSE_ROWS = 140
+DEFAULT_WEIGHT_ROWS = 50
+
+
+def parse_bin_lines(path, bits_per_line):
+    """One bits_per_line-character binary ('0'/'1' only) value per line."""
+    values = []
+    with open(path, "r") as f:
+        for lineno, raw in enumerate(f, start=1):
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+            if len(line) != bits_per_line:
+                sys.exit(
+                    f"{path}:{lineno}: expected {bits_per_line} binary characters "
+                    f"('0'/'1'), got {len(line)}: {raw.strip()!r}"
+                )
+            if any(c not in "01" for c in line):
+                sys.exit(
+                    f"{path}:{lineno}: not a valid binary string (only '0'/'1' "
+                    f"allowed): {raw.strip()!r}"
+                )
+            values.append(int(line, 2))
+    return values
+
+
+def row_to_words(bit_value, num_words):
+    """
+    Extract num_words 32-bit words from an integer, ordered for
+    TM_CLAUSE(0)/TM_WEIGHT(0) .. (n) writes -- word[0] = bits[31:0]
+    (LSB), word[n-1] = the most-significant chunk. See module docstring.
+    """
+    words = []
+    for i in range(num_words):
+        words.append((bit_value >> (WORD_BITS * i)) & WORD_MASK)
+    return words
+
+
+def check_exact_row_count(path, actual, expected, what):
+    if actual != expected:
+        sys.exit(
+            f"error: {path} has {actual} {what} rows, expected exactly "
+            f"{expected}. Row count must match the core's memory capacity "
+            f"(or pass --{what}-rows to override if this is intentionally "
+            f"a smaller test model)."
+        )
+
+
+def emit_word_array(f, name, words):
+    f.write(f"static const uint32_t {name}[] = {{\n")
+    for i in range(0, len(words), WORDS_PER_ROW):
+        row = words[i:i + WORDS_PER_ROW]
+        f.write("    " + ", ".join(f"0x{w:08X}" for w in row) + ",\n")
+    f.write("};\n\n")
+
+
+def emit_header(out_path, guard, clause_rows, weight_rows,
+                 clause_words, weight_words, image_words):
+    with open(out_path, "w") as f:
+        f.write("/* Auto-generated by txt_to_tm_header.py -- do not edit by hand. */\n")
+        f.write(f"#ifndef {guard}\n#define {guard}\n\n")
+        f.write("#include <stdint.h>\n\n")
+
+        f.write(f"#define TM_MODEL_CLAUSE_ROWS  {clause_rows}u\n")
+        f.write(f"#define TM_MODEL_WEIGHT_ROWS  {weight_rows}u\n")
+        if image_words is not None:
+            f.write(f"#define TM_MODEL_IMAGE_WORDS  {len(image_words)}u\n")
+        f.write("\n")
+
+        emit_word_array(f, "tm_model_clause_words", clause_words)
+        emit_word_array(f, "tm_model_weight_words", weight_words)
+
+        if image_words is not None:
+            f.write("/* One 32-bit AHB write per entry, in file order -- no\n"
+                     " * row-splitting needed (unlike clause/weight above). */\n")
+            f.write("static const uint32_t tm_model_image_words[] = {\n")
+            for i in range(0, len(image_words), WORDS_PER_ROW):
+                row = image_words[i:i + WORDS_PER_ROW]
+                f.write("    " + ", ".join(f"0x{w:08X}" for w in row) + ",\n")
+            f.write("};\n\n")
+
+        f.write(f"#endif /* {guard} */\n")
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__,
+                                  formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--clause", required=True, help="path to clause.txt (binary text, 256 chars/line)")
+    ap.add_argument("--weight", required=True, help="path to weight.txt (binary text, 256 chars/line)")
+    ap.add_argument("--image", required=False, default=None,
+                     help="path to image.txt (optional, binary text, 32 chars/line)")
+    ap.add_argument("--image-limit", type=int, default=None,
+                     help="if set, only the first N lines of --image are used; "
+                          "extra lines are dropped with a warning instead of erroring")
+    ap.add_argument("--clause-rows", type=int, default=DEFAULT_CLAUSE_ROWS,
+                     help=f"expected exact clause row count (default {DEFAULT_CLAUSE_ROWS})")
+    ap.add_argument("--weight-rows", type=int, default=DEFAULT_WEIGHT_ROWS,
+                     help=f"expected exact weight row count (default {DEFAULT_WEIGHT_ROWS})")
+    ap.add_argument("--out", required=True, help="output header path")
+    ap.add_argument("--guard", default="TM_MODEL_DATA_H", help="header include-guard name")
+    args = ap.parse_args()
+
+    clause_rows_bin = parse_bin_lines(args.clause, CLAUSE_WEIGHT_BIN_CHARS)
+    weight_rows_bin = parse_bin_lines(args.weight, CLAUSE_WEIGHT_BIN_CHARS)
+
+    check_exact_row_count(args.clause, len(clause_rows_bin), args.clause_rows, "clause")
+    check_exact_row_count(args.weight, len(weight_rows_bin), args.weight_rows, "weight")
+
+    if args.weight_rows % 5 != 0:
+        sys.exit(
+            f"error: --weight-rows {args.weight_rows} is not a multiple of 5 -- "
+            f"MODEL_PARAM's WEIGHT_ROWS_FIELD can only encode row counts in "
+            f"steps of 5 (see spec sheet Sec. 4.3)."
+        )
+    if args.clause_rows > 255:
+        sys.exit(f"error: --clause-rows {args.clause_rows} exceeds the 8-bit CLAUSE_ROWS field (max 255)")
+    if args.weight_rows > 75:
+        sys.exit(f"error: --weight-rows {args.weight_rows} exceeds the 4-bit field's max of 75 (15*5)")
+
+    clause_words = []
+    for val in clause_rows_bin:
+        clause_words.extend(row_to_words(val, WORDS_PER_ROW))
+
+    weight_words = []
+    for val in weight_rows_bin:
+        weight_words.extend(row_to_words(val, WORDS_PER_ROW))
+
+    image_words = None
+    if args.image is not None:
+        image_rows_bin = parse_bin_lines(args.image, IMAGE_BIN_CHARS)
+        if len(image_rows_bin) == 0:
+            sys.exit(f"error: {args.image} contains no image words")
+        if args.image_limit is not None and len(image_rows_bin) > args.image_limit:
+            print(f"warning: {args.image} has {len(image_rows_bin)} lines, "
+                  f"truncating to --image-limit {args.image_limit} "
+                  f"(first {args.image_limit} kept, rest dropped)",
+                  file=sys.stderr)
+            image_rows_bin = image_rows_bin[:args.image_limit]
+        image_words = image_rows_bin   # already exactly 32 bits, no splitting needed
+
+    emit_header(args.out, args.guard,
+                len(clause_rows_bin), len(weight_rows_bin),
+                clause_words, weight_words, image_words)
+
+    msg = (f"Wrote {args.out}: {len(clause_rows_bin)} clause rows, "
+           f"{len(weight_rows_bin)} weight rows "
+           f"({len(clause_words)} + {len(weight_words)} words)")
+    if image_words is not None:
+        msg += f", {len(image_words)} image words"
+    print(msg + ".")
+
+
+if __name__ == "__main__":
+    main()

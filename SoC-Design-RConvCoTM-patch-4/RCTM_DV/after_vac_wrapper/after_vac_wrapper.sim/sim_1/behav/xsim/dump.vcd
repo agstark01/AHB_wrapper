@@ -1,0 +1,1087 @@
+$date
+   Tue Aug 11 21:55:37 2026
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("dump.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_ahb_ip_wrapper_dma_irq $end
+$var reg 1 ! HCLK $end
+$var reg 1 " HRESETn $end
+$var reg 1 # HSEL $end
+$var reg 32 $ HADDR [31:0] $end
+$var reg 2 % HTRANS [1:0] $end
+$var reg 1 & HWRITE $end
+$var reg 32 ' HWDATA [31:0] $end
+$var wire 1 ( HREADY $end
+$var wire 1 ) HREADYOUT $end
+$var wire 32 * HRDATA [31:0] $end
+$var wire 1 + HRESP $end
+$var wire 1 , init_done $end
+$var reg 32 - ip_final_answer [31:0] $end
+$var reg 1 . ip_computation_done $end
+$var wire 1 / drq_ipdma128 $end
+$var reg 1 0 dlast_ipdma128 $end
+$var wire 1 1 drq_opdma128 $end
+$var reg 1 2 dlast_opdma128 $end
+$var wire 1 3 irq_key128 $end
+$var wire 1 4 irq_ip128 $end
+$var wire 1 5 irq_op128 $end
+$var wire 1 6 irq_error $end
+$var wire 1 7 irq_merged $end
+$var reg 32 8 rdata [31:0] $end
+$var reg 32 9 b [31:0] $end
+$scope module dut $end
+$var wire 1 : ahb_hclk $end
+$var wire 1 ; ahb_hresetn $end
+$var wire 1 < ahb_hsel $end
+$var wire 16 = ahb_haddr16 [15:0] $end
+$var wire 2 > ahb_htrans [1:0] $end
+$var wire 3 ? ahb_hsize [2:0] $end
+$var wire 4 @ ahb_hprot [3:0] $end
+$var wire 1 A ahb_hwrite $end
+$var wire 1 ( ahb_hready $end
+$var wire 32 B ahb_hwdata [31:0] $end
+$var wire 1 ) ahb_hreadyout $end
+$var wire 32 * ahb_hrdata [31:0] $end
+$var wire 1 + ahb_hresp $end
+$var wire 1 / drq_ipdma128 $end
+$var wire 1 C dlast_ipdma128 $end
+$var wire 1 1 drq_opdma128 $end
+$var wire 1 D dlast_opdma128 $end
+$var wire 1 3 irq_key128 $end
+$var wire 1 4 irq_ip128 $end
+$var wire 1 5 irq_op128 $end
+$var wire 1 6 irq_error $end
+$var wire 1 7 irq_merged $end
+$var reg 16 E addr16_r [15:0] $end
+$var reg 1 F sel_r $end
+$var reg 1 G wcyc_r $end
+$var reg 1 H rcyc_r $end
+$var reg 4 I byte4_r [3:0] $end
+$var wire 1 J key128_load_ack $end
+$var wire 1 K ip128_load_ack $end
+$var wire 1 L op128_load_ack $end
+$var wire 2 M byt_adr [1:0] $end
+$var wire 4 N byte_nxt [3:0] $end
+$var wire 1 O wlast128 $end
+$var wire 1 P rlast128 $end
+$var reg 8 Q control [7:0] $end
+$var reg 32 R param [31:0] $end
+$var reg 3 S drq_enable [2:0] $end
+$var reg 4 T irq_enable [3:0] $end
+$var wire 8 U status [7:0] $end
+$var wire 3 V drq_active [2:0] $end
+$var wire 4 W irq_active [3:0] $end
+$var wire 32 X rd_keybuf [31:0] $end
+$var wire 32 Y rd_ipbuf [31:0] $end
+$var wire 32 Z rd_opbuf [31:0] $end
+$var wire 1 [ sel_mode $end
+$var wire 1 \ sel_keybuf $end
+$var wire 1 ] sel_ipbuf $end
+$var wire 1 ^ sel_opbuf $end
+$var wire 1 _ alast_key128 $end
+$var wire 1 ` alast_ip128 $end
+$var wire 1 a alast_op128 $end
+$var reg 32 b rdata32 [31:0] $end
+$var wire 128 c key128_be [127:0] $end
+$var wire 128 d ip128_le [127:0] $end
+$var wire 128 e ip128_be [127:0] $end
+$var wire 128 f op128_be [127:0] $end
+$var wire 128 g op128_muxed [127:0] $end
+$var wire 1 h aes128_encode $end
+$var wire 1 i aes256_keysize $end
+$var wire 1 j aes_keyloaded_pulse $end
+$var wire 1 k aes_dataloaded_pulse $end
+$var wire 1 l aes_ready $end
+$var wire 1 m aes_valid $end
+$var reg 1 n aes_ready_del $end
+$var reg 1 o aes_init $end
+$var reg 1 p aes_next $end
+$var reg 1 q aes_key_busy $end
+$var reg 1 r aes_key_rdy $end
+$var reg 1 s aes_res_busy $end
+$var reg 1 t aes_res_rdy $end
+$var reg 1 u aes_err $end
+$scope module u_reg128_key $end
+$var wire 1 : clk $end
+$var wire 1 ; rst_b $end
+$var wire 1 \ sel_r $end
+$var wire 1 v wcyc_r $end
+$var wire 1 w rcyc_r $end
+$var wire 2 x word2_r [1:0] $end
+$var wire 4 y byte4_r [3:0] $end
+$var wire 32 B wdata32 [31:0] $end
+$var wire 32 X rdata32 [31:0] $end
+$var wire 1 J dma128_ack $end
+$var wire 128 z out128_le [127:0] $end
+$var wire 128 c out128_be [127:0] $end
+$var reg 1 { ack128 $end
+$var wire 1 | zpad_cfg $end
+$upscope $end
+$scope module u_reg128_ip $end
+$var wire 1 : clk $end
+$var wire 1 ; rst_b $end
+$var wire 1 ] sel_r $end
+$var wire 1 } wcyc_r $end
+$var wire 1 ~ rcyc_r $end
+$var wire 2 !! word2_r [1:0] $end
+$var wire 4 "! byte4_r [3:0] $end
+$var wire 32 B wdata32 [31:0] $end
+$var wire 32 Y rdata32 [31:0] $end
+$var wire 1 K dma128_ack $end
+$var wire 128 d out128_le [127:0] $end
+$var wire 128 e out128_be [127:0] $end
+$var reg 1 #! ack128 $end
+$var wire 1 $! zpad_cfg $end
+$upscope $end
+$upscope $end
+$scope task ahb_read $end
+$var reg 32 %! addr [31:0] $end
+$var reg 32 &! read_data [31:0] $end
+$var reg 1 '! is_last_op $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+b0 !!
+0"
+b0 "!
+0#
+0#!
+b0 $
+1$!
+b0 %
+bx %!
+0&
+bx &!
+b0 '
+x'!
+1(
+1)
+b1011101011010000101110101101 *
+0+
+z,
+b0 -
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+bx 8
+b0 9
+0:
+0;
+0<
+b0 =
+b0 >
+bz ?
+bz @
+0A
+b0 B
+0C
+0D
+b0 E
+0F
+0G
+0H
+b0 I
+0J
+0K
+0L
+b0 M
+bx1 N
+0O
+0P
+b0 Q
+b0 R
+b0 S
+b0 T
+b1000 U
+b0 V
+b0 W
+b0 X
+b0 Y
+bz Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+b1011101011010000101110101101 b
+b0 c
+b0 d
+b0 e
+bz f
+bz g
+0h
+0i
+0j
+0k
+zl
+zm
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+b0 x
+b0 y
+b0 z
+0{
+0|
+0}
+0~
+$end
+
+#5000
+1!
+1:
+
+#10000
+0!
+0:
+
+#15000
+1!
+1:
+
+#20000
+0!
+0:
+
+#25000
+1!
+1:
+
+#30000
+0!
+0:
+
+#35000
+1!
+1:
+
+#40000
+0!
+0:
+
+#45000
+1!
+1"
+1:
+1;
+zn
+
+#50000
+0!
+0:
+
+#55000
+1!
+1:
+
+#60000
+0!
+0:
+
+#65000
+1!
+1:
+
+#70000
+0!
+0:
+
+#75000
+1!
+1:
+
+#80000
+0!
+0:
+
+#85000
+1!
+1:
+
+#90000
+0!
+0:
+
+#95000
+1!
+b0 %!
+0'!
+1:
+
+#100000
+0!
+0:
+
+#105000
+1!
+1#
+b10 %
+1:
+1<
+b10 >
+
+#110000
+0!
+0:
+
+#115000
+1!
+bx1 "!
+0#
+b0 %
+b1011101011010000101110101101 &!
+b1100001011001010111001100110001 *
+b1011101011010000101110101101 8
+1:
+0<
+b0 >
+1F
+1H
+bx1 I
+1[
+b1100001011001010111001100110001 b
+1w
+bx1 y
+1~
+
+#120000
+0!
+0:
+
+#125000
+1!
+b0 "!
+b1011101011010000101110101101 *
+1:
+0F
+0H
+b0 I
+0[
+b1011101011010000101110101101 b
+0w
+b0 y
+0~
+
+#130000
+0!
+0:
+
+#135000
+1!
+1:
+
+#140000
+0!
+0:
+
+#145000
+1!
+1:
+
+#150000
+0!
+0:
+
+#155000
+1!
+1:
+
+#160000
+0!
+0:
+
+#165000
+1!
+1:
+
+#170000
+0!
+0:
+
+#175000
+1!
+1:
+
+#180000
+0!
+0:
+
+#185000
+1!
+1:
+
+#190000
+0!
+0:
+
+#195000
+1!
+1:
+
+#200000
+0!
+0:
+
+#205000
+1!
+1:
+
+#210000
+0!
+0:
+
+#215000
+1!
+1:
+
+#220000
+0!
+0:
+
+#225000
+1!
+1:
+
+#230000
+0!
+0:
+
+#235000
+1!
+1:
+
+#240000
+0!
+0:
+
+#245000
+1!
+1:
+
+#250000
+0!
+0:
+
+#255000
+1!
+1:
+
+#260000
+0!
+0:
+
+#265000
+1!
+1:
+
+#270000
+0!
+0:
+
+#275000
+1!
+1:
+
+#280000
+0!
+0:
+
+#285000
+1!
+1:
+
+#290000
+0!
+0:
+
+#295000
+1!
+1:
+
+#300000
+0!
+0:
+
+#305000
+1!
+1:
+
+#310000
+0!
+0:
+
+#315000
+1!
+1:
+
+#320000
+0!
+0:
+
+#325000
+1!
+1:
+
+#330000
+0!
+0:
+
+#335000
+1!
+1:
+
+#340000
+0!
+0:
+
+#345000
+1!
+1:
+
+#350000
+0!
+0:
+
+#355000
+1!
+1:
+
+#360000
+0!
+0:
+
+#365000
+1!
+1:
+
+#370000
+0!
+0:
+
+#375000
+1!
+1:
+
+#380000
+0!
+0:
+
+#385000
+1!
+1:
+
+#390000
+0!
+0:
+
+#395000
+1!
+1:
+
+#400000
+0!
+0:
+
+#405000
+1!
+1:
+
+#410000
+0!
+0:
+
+#415000
+1!
+1:
+
+#420000
+0!
+0:
+
+#425000
+1!
+1:
+
+#430000
+0!
+0:
+
+#435000
+1!
+1:
+
+#440000
+0!
+0:
+
+#445000
+1!
+1:
+
+#450000
+0!
+0:
+
+#455000
+1!
+1:
+
+#460000
+0!
+0:
+
+#465000
+1!
+1:
+
+#470000
+0!
+0:
+
+#475000
+1!
+1:
+
+#480000
+0!
+0:
+
+#485000
+1!
+1:
+
+#490000
+0!
+0:
+
+#495000
+1!
+1:
+
+#500000
+0!
+0:
+
+#505000
+1!
+1:
+
+#510000
+0!
+0:
+
+#515000
+1!
+1:
+
+#520000
+0!
+0:
+
+#525000
+1!
+1:
+
+#530000
+0!
+0:
+
+#535000
+1!
+1:
+
+#540000
+0!
+0:
+
+#545000
+1!
+1:
+
+#550000
+0!
+0:
+
+#555000
+1!
+1:
+
+#560000
+0!
+0:
+
+#565000
+1!
+1:
+
+#570000
+0!
+0:
+
+#575000
+1!
+1:
+
+#580000
+0!
+0:
+
+#585000
+1!
+1:
+
+#590000
+0!
+0:
+
+#595000
+1!
+1:
+
+#600000
+0!
+0:
+
+#605000
+1!
+1:
+
+#610000
+0!
+0:
+
+#615000
+1!
+1:
+
+#620000
+0!
+0:
+
+#625000
+1!
+1:
+
+#630000
+0!
+0:
+
+#635000
+1!
+1:
+
+#640000
+0!
+0:
+
+#645000
+1!
+1:
+
+#650000
+0!
+0:
+
+#655000
+1!
+1:
+
+#660000
+0!
+0:
+
+#665000
+1!
+1:
+
+#670000
+0!
+0:
+
+#675000
+1!
+1:
+
+#680000
+0!
+0:
+
+#685000
+1!
+1:
+
+#690000
+0!
+0:
+
+#695000
+1!
+1:
+
+#700000
+0!
+0:
+
+#705000
+1!
+1:
+
+#710000
+0!
+0:
+
+#715000
+1!
+1:
+
+#720000
+0!
+0:
+
+#725000
+1!
+1:
+
+#730000
+0!
+0:
+
+#735000
+1!
+1:
+
+#740000
+0!
+0:
+
+#745000
+1!
+1:
+
+#750000
+0!
+0:
+
+#755000
+1!
+1:
+
+#760000
+0!
+0:
+
+#765000
+1!
+1:
+
+#770000
+0!
+0:
+
+#775000
+1!
+1:
+
+#780000
+0!
+0:
+
+#785000
+1!
+1:
+
+#790000
+0!
+0:
+
+#795000
+1!
+1:
+
+#800000
+0!
+0:
+
+#805000
+1!
+1:
+
+#810000
+0!
+0:
+
+#815000
+1!
+1:
+
+#820000
+0!
+0:
+
+#825000
+1!
+1:
+
+#830000
+0!
+0:
+
+#835000
+1!
+1:
+
+#840000
+0!
+0:
+
+#845000
+1!
+1:
+
+#850000
+0!
+0:
+
+#855000
+1!
+1:
+
+#860000
+0!
+0:
+
+#865000
+1!
+1:
+
+#870000
+0!
+0:
+
+#875000
+1!
+1:
+
+#880000
+0!
+0:
+
+#885000
+1!
+1:
+
+#890000
+0!
+0:
+
+#895000
+1!
+1:
+
+#900000
+0!
+0:
+
+#905000
+1!
+1:
+
+#910000
+0!
+0:
+
+#915000
+1!
+1:
+
+#920000
+0!
+0:
+
+#925000
+1!
+1:
+
+#930000
+0!
+0:
+
+#935000
+1!
+1:
+
+#940000
+0!
+0:
+
+#945000
+1!
+1:
+
+#950000
+0!
+0:
+
+#955000
+1!
+1:
+
+#960000
+0!
+0:
+
+#965000
+1!
+1:
+
+#970000
+0!
+0:
+
+#975000
+1!
+1:
+
+#980000
+0!
+0:
+
+#985000
+1!
+1:
+
+#990000
+0!
+0:
+
+#995000
+1!
+1:

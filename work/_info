@@ -1,0 +1,328 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.4_5 2025.06, Jun 12 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper
+T_opt
+!s110 1790609718
+VC6NQj?ES6TV5g=o1>h2Xa0
+04 17 4 work tb_ahb_ip_wrapper fast 0
+=1-000ae431a4f1-6aba8936-9c2f7-26f748
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.4_5;77
+R1
+vaddr_gen
+Z3 2SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v|ahb_ip_wrapper_dma_irq.v|tb_ahb_ip_wrapper.v
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1790622714
+!i10b 1
+!s100 =k5dlVm[AM]jN50d^WPj63
+IT4SVU0_0B3l^ClJe:[6Wb2
+S1
+R1
+Z6 w1782122886
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v
+!i122 2
+L0 22 267
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2023.4_5;77
+r1
+!s85 0
+31
+Z9 !s108 1790622714.000000
+!s107 tb_ahb_ip_wrapper.v|ahb_ip_wrapper_dma_irq.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v|
+Z10 !s90 -reportprogress|300|-sv|-f|filelist.f|
+!i113 0
+Z11 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vahb_ip_wrapper_dma_irq
+R3
+R4
+R5
+!i10b 1
+!s100 m:XnKY17m^lZ^e2B]8_]52
+In8gK@aC_TWLV;o>OjY`fa2
+S1
+R1
+w1788815321
+8ahb_ip_wrapper_dma_irq.v
+Fahb_ip_wrapper_dma_irq.v
+!i122 2
+L0 1 386
+R7
+R8
+r1
+!s85 0
+31
+R9
+Z12 !s107 tb_ahb_ip_wrapper.v|ahb_ip_wrapper_dma_irq.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v|SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v|
+R10
+!i113 0
+R11
+R2
+vclass_top
+R3
+R4
+R5
+!i10b 1
+!s100 Ume_52U3UG23njhVlUY5e0
+IG2@UYRM;Q=C^A60I9d<oV2
+S1
+R1
+w1787177587
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v
+!i122 2
+L0 23 400
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vconv_arch
+R3
+R4
+R5
+!i10b 1
+!s100 1kj9BeYD>zR?ke?K3<L_D3
+I1aNlaOhZY0Y`YRkk;MM@o0
+S1
+R1
+R6
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v
+!i122 2
+L0 33 356
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vconv_enable_generation
+R3
+R4
+R5
+!i10b 1
+!s100 ?W8@90QNES7a=hSFA5?303
+I9hcPZ6j@2kLAkZRWN2^aY3
+S1
+R1
+R6
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v
+!i122 2
+L0 21 64
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vConvolution
+R3
+R4
+R5
+!i10b 1
+!s100 Vk67ezNd15`Zbh4<kj@_83
+IMWOWbgnO>BGEcKLMzz8OY0
+S1
+R1
+R6
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v
+!i122 2
+L0 3 178
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+n@convolution
+vmy_buffer
+R3
+R4
+R5
+!i10b 1
+!s100 Va^eTK4KbdaYo7c>5BLk21
+IEGf=A0gBFV67TomNkUWKb0
+S1
+R1
+R6
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v
+!i122 2
+L0 21 133
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vprocessor_en
+R3
+R4
+R5
+!i10b 1
+!s100 PCY3dabJbdKehDeL20gQJ0
+I?AIhRnJkn1D<hM<P2_]DR1
+S1
+R1
+R6
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v
+!i122 2
+L0 30 217
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vremapunit
+R3
+R4
+R5
+!i10b 1
+!s100 zfkeTRePL8_Z?n;I5enfG2
+I=BE@78m4bZjof5_P16RWM0
+S1
+R1
+R6
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v
+!i122 2
+L0 22 314
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vtb_ahb_ip_wrapper
+R3
+R4
+R5
+!i10b 1
+!s100 ;SJjFIW0ANkVLJZDJEbBY1
+I@`mAHUD;AWWzfOD7hJT<83
+S1
+R1
+w1788815485
+8tb_ahb_ip_wrapper.v
+Ftb_ahb_ip_wrapper.v
+!i122 2
+L0 23 340
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vtop
+R3
+R4
+R5
+!i10b 1
+!s100 Z0Z2AHCJ<iIaab07MLkmh1
+ITD;VDoG3HB`7d0A<01`1C0
+S1
+R1
+w1787115388
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v
+!i122 2
+L0 23 520
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2
+vweight_adder
+R3
+R4
+R5
+!i10b 1
+!s100 OU>Qn:fL2HV:j?WZ>fFCO2
+IB3CJ3;i9MV`;R;:oi9M@;0
+S1
+R1
+R6
+8SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v
+FSoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v
+!i122 2
+L0 2 65
+R7
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 0
+R11
+R2

@@ -1,0 +1,1062 @@
+*** Start analyzing build configuration ***
+INFO: Auto-config - Scanning: /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper
+INFO: Auto-config - VLOG: /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper
+INFO: Auto-config - Wrote:
+    .dvt/default.build.auto.1
+*** List of included argument files ***
+    Build configuration file:  /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/.dvt/default.build
+    -f /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/.dvt/default.build.auto.1
+*** List of invocations ***
+Invocation #1 +dvt_init+dvt in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/.dvt/default.build.auto.1 at line 9
+*** Done analyzing build configuration [121 ms] ***
+
+*** Start SystemVerilog build ***
+*** Invocation #1***
+Loading (1) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v [33 ms, 181 lines, Verilog_2001] ...
+Loading (2) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v [20 ms, 289 lines, Verilog_2001] ...
+Loading (3) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v [11 ms, 331 lines, Verilog_2001] ...
+Loading (4) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v [27 ms, 584 lines, Verilog_2001] ...
+Loading (5) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v [15 ms, 424 lines, Verilog_2001] ...
+Loading (6) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v [11 ms, 389 lines, Verilog_2001] ...
+Loading (7) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v [4 ms, 85 lines, Verilog_2001] ...
+Loading (8) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v [3 ms, 154 lines, Verilog_2001] ...
+Loading (9) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v [6 ms, 247 lines, Verilog_2001] ...
+Loading (10) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v [22 ms, 336 lines, Verilog_2001] ...
+Loading (11) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v [9 ms, 500 lines, Verilog_2001] ...
+Loading (12) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v [13 ms, 543 lines, Verilog_2001] ...
+Loading (13) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v [2 ms, 67 lines, Verilog_2001] ...
+Loading (14) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/Convolution.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/Convolution.v [4 ms, 137 lines, Verilog_2001] ...
+Loading (15) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/addr_gen.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/addr_gen.v [2 ms, 143 lines, Verilog_2001] ...
+Loading (16) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/buffer.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/buffer.v [2 ms, 140 lines, Verilog_2001] ...
+Loading (17) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v [4 ms, 272 lines, Verilog_2001] ...
+Loading (18) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v [6 ms, 269 lines, Verilog_2001] ...
+Loading (19) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_enable_generation.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_enable_generation.v [1 ms, 62 lines, Verilog_2001] ...
+Loading (20) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/processor_en.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/processor_en.v [3 ms, 295 lines, Verilog_2001] ...
+Loading (21) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v [18 ms, 368 lines, Verilog_2001] ...
+Loading (22) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v [8 ms, 322 lines, Verilog_2001] ...
+Loading (23) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/weight_adder.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/weight_adder.v [1 ms, 61 lines, Verilog_2001] ...
+Loading (24) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/Convolution.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/Convolution.v [3 ms, 183 lines, Verilog_2001] ...
+Loading (25) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/addr_gen.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/addr_gen.v [3 ms, 291 lines, Verilog_2001] ...
+Loading (26) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/class_top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/class_top.v [5 ms, 406 lines, Verilog_2001] ...
+Loading (27) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v [6 ms, 392 lines, Verilog_2001] ...
+Loading (28) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_enable_generation.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_enable_generation.v [2 ms, 85 lines, Verilog_2001] ...
+Loading (29) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/my_buffer.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/my_buffer.v [2 ms, 154 lines, Verilog_2001] ...
+Loading (30) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/processor_en.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/processor_en.v [5 ms, 247 lines, Verilog_2001] ...
+Loading (31) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v [10 ms, 336 lines, Verilog_2001] ...
+Loading (32) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/top.v [10 ms, 542 lines, Verilog_2001] ...
+Loading (33) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/weight_adder.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/weight_adder.v [1 ms, 81 lines, Verilog_2001] ...
+Loading (34) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/Convolution.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/Convolution.v [3 ms, 159 lines, Verilog_2001] ...
+Loading (35) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v [2 ms, 378 lines, Verilog_2001] ...
+Loading (36) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v [2 ms, 237 lines, Verilog_2001] ...
+Loading (37) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/apb_accel_regs.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/apb_accel_regs.v [6 ms, 416 lines, Verilog_2001] ...
+Loading (38) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/blk_sram.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/blk_sram.v [1 ms, 37 lines, Verilog_2001] ...
+Loading (39) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/buffer.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/buffer.v [2 ms, 139 lines, Verilog_2001] ...
+Loading (40) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v [4 ms, 392 lines, Verilog_2001] ...
+Loading (41) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/clauses_sram.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/clauses_sram.v [0 ms, 40 lines, Verilog_2001] ...
+Loading (42) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v [5 ms, 346 lines, Verilog_2001] ...
+Loading (43) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_enable_generation.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_enable_generation.v [1 ms, 60 lines, Verilog_2001] ...
+Loading (44) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/image_glue_logic.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/image_glue_logic.v [2 ms, 156 lines, Verilog_2001] ...
+Loading (45) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/processor_en.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/processor_en.v [3 ms, 298 lines, Verilog_2001] ...
+Loading (46) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/remapunit.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/remapunit.v [7 ms, 314 lines, Verilog_2001] ...
+Loading (47) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v [5 ms, 396 lines, Verilog_2001] ...
+Loading (48) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weight_adder.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weight_adder.v [1 ms, 68 lines, Verilog_2001] ...
+Loading (49) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weights_clauses_glue.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weights_clauses_glue.v [1 ms, 189 lines, Verilog_2001] ...
+Loading (50) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weights_sram.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weights_sram.v [1 ms, 44 lines, Verilog_2001] ...
+Loading (51) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v [3 ms, 414 lines, Verilog_2001] ...
+Loading (52) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v [3 ms, 420 lines, Verilog_2001] ...
+Loading (53) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v [5 ms, 382 lines, Verilog_2001] ...
+Loading (54) /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v ...
+Done /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v [1 ms, 85 lines, Verilog_2001] ...
+*** Done invocation #1 [335 ms] ***
+*** Done parsing [LT 125 ms, PT 335 ms] ***
+*** Total number of lines [13 886] ***
+Performing post full build actions ...
+Performing post full build step 1 (SRI) [2 ms] ...
+Performing post full build step 2 (RI) [12 ms] ...
+Performing post full build step 3 (RCP) [5 ms] ...
+*** Files summary [54 total, 54 unique, 0 optimized] ***
+*** Done SystemVerilog build [451 ms] ***
+
+*** Start mixed mode extension build ***
+Performing mixed post full build step (VLOG - RI) [2 ms] ...
+*** Warning: UNSPECIFIED_TOP: Please specify a -top module/entity/configuration in the project build file
+*** Top design candidates: work.soclabs_ahb_aes128_ctrl, work.class_top_tb, work.buffer, work.accel_subsystem_top, work.tb_ahb_ip_wrapper
+Performing mixed post full build step (MIXED - ELAB) [689 ms] ...
+Performing mixed post full build step (MIXED - UNEL) [152 ms] ...
+*** Warning: MISSING_PORT_CONNECTION: Instance 'uut' of module 'class_top' is missing port connection to output 'tready'
+    at line 48 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:48 [compile index 11]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'tdata' of '32-bit' type from 'total_img' of '128-bit' type
+    at line 50 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:50 [compile index 11]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'x_w' of '7-bit' type from 'x' of '6-bit' type
+    at line 50 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:50 [compile index 11]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'resetessen' of '2-bit' type from 'bram_addr_a' of '8-bit' type
+    at line 50 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:50 [compile index 11]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'output_params' of '4-bit' type from 'bram_addr_a2' of '8-bit' type
+    at line 50 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:50 [compile index 11]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'tready' of '1-bit' type from 'output_params' of '4-bit' type
+    at line 50 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:50 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '0' of signed type
+    at line 180 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:180 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 180 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:180 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '1' of signed type
+    at line 181 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:181 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 181 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:181 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '2' of signed type
+    at line 182 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:182 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 182 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:182 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '3' of signed type
+    at line 183 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:183 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 183 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:183 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '4' of signed type
+    at line 184 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:184 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 184 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:184 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '5' of signed type
+    at line 185 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:185 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 185 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:185 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '6' of signed type
+    at line 186 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:186 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 186 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:186 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '7' of signed type
+    at line 187 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:187 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 187 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:187 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '8' of signed type
+    at line 188 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:188 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 188 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:188 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '9' of signed type
+    at line 189 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:189 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 189 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:189 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '10' of signed type
+    at line 190 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:190 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 190 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:190 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '11' of signed type
+    at line 191 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:191 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 191 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:191 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '12' of signed type
+    at line 192 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:192 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 192 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:192 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '13' of signed type
+    at line 193 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:193 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 193 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:193 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '14' of signed type
+    at line 194 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:194 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 194 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:194 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '15' of signed type
+    at line 195 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:195 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 195 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:195 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '16' of signed type
+    at line 196 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:196 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 196 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:196 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '17' of signed type
+    at line 197 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:197 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 197 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:197 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '18' of signed type
+    at line 198 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:198 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 198 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:198 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '19' of signed type
+    at line 199 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:199 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 199 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:199 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '20' of signed type
+    at line 200 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:200 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 200 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:200 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '21' of signed type
+    at line 201 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:201 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 201 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:201 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '22' of signed type
+    at line 202 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:202 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 202 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:202 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '23' of signed type
+    at line 203 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:203 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 203 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:203 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '24' of signed type
+    at line 204 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:204 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 204 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:204 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '25' of signed type
+    at line 205 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:205 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 205 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:205 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '26' of signed type
+    at line 206 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:206 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 206 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:206 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '27' of signed type
+    at line 207 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:207 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 207 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:207 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '28' of signed type
+    at line 208 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:208 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 208 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:208 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '29' of signed type
+    at line 209 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:209 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 209 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:209 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '30' of signed type
+    at line 210 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:210 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 210 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:210 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '31' of signed type
+    at line 211 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:211 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 211 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:211 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '32' of signed type
+    at line 212 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:212 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 212 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:212 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '33' of signed type
+    at line 213 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:213 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 213 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:213 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '34' of signed type
+    at line 214 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:214 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 214 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:214 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '35' of signed type
+    at line 215 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:215 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 215 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:215 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '36' of signed type
+    at line 216 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:216 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 216 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:216 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '37' of signed type
+    at line 217 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:217 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 217 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:217 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '38' of signed type
+    at line 218 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:218 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 218 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:218 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '39' of signed type
+    at line 219 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:219 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 219 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:219 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '40' of signed type
+    at line 220 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:220 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 220 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:220 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '41' of signed type
+    at line 221 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:221 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 221 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:221 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '42' of signed type
+    at line 222 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:222 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 222 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:222 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '43' of signed type
+    at line 223 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:223 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 223 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:223 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '44' of signed type
+    at line 224 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:224 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 224 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:224 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '45' of signed type
+    at line 225 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:225 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 225 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:225 [compile index 11]
+*** Warning: CASE_ITEM_SIGNING_MISMATCH: Comparison between case expression '(bram_addr_a - 1)' of unsigned type and item expression '46' of signed type
+    at line 226 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:226 [compile index 11]
+*** Warning: ASSIGNMENT_BLOCKING: Blocking assignment of 'clause_write' in sequential logic (use non-blocking assignment)
+    at line 226 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:226 [compile index 11]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'R' of module 'remapunit' is missing port connection to input 'i_rst_n'
+    at line 170 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:170 [compile index 52]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'T' of module 'top' is missing port connection to input 'rst, i_rst_n'
+    at line 374 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:374 [compile index 52]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'bram_addr_a' of '15-bit' type from 'bram_addr_a_wire' of '8-bit' type
+    at line 387 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:387 [compile index 52]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'clauses' of '9-bit' type from 'clause' of '8-bit' type
+    at line 390 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:390 [compile index 52]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'bram_addr_a2' of '15-bit' type from 'bram_addr_a2_wire' of '8-bit' type
+    at line 393 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:393 [compile index 52]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'bram_img_addr_w' of '1-bit' type from 'img_bram' of '8-bit' type
+    at line 84 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:84 [compile index 52]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'bram_addr_a' of '8-bit' type from 'bram_addr_a_nxt' of '15-bit' type
+    at line 132 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:132 [compile index 52]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'bram_addr_a2' of '8-bit' type from 'bram_addr_a2_nxt' of '15-bit' type
+    at line 133 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:133 [compile index 52]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'bram_addr_a2_nxt' of '15-bit' type from 'bram_addr_a2' of '8-bit' type
+    at line 141 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:141 [compile index 52]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'bram_addr_a_nxt' of '15-bit' type from 'bram_addr_a' of '8-bit' type
+    at line 142 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:142 [compile index 52]
+*** Error: NON_EXISTING_PORT: Non existing port 'rt' of module 'class_top'
+    at line 354 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:354 [compile index 35]
+*** Error: NON_EXISTING_PORT: Non existing port 'tvalid' of module 'class_top'
+    at line 360 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:360 [compile index 35]
+*** Error: NON_EXISTING_PORT: Non existing port 'tkeep' of module 'class_top'
+    at line 361 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:361 [compile index 35]
+*** Error: NON_EXISTING_PORT: Non existing port 'tlast' of module 'class_top'
+    at line 362 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:362 [compile index 35]
+*** Error: NON_EXISTING_PORT: Non existing port 'stop' of module 'class_top'
+    at line 364 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:364 [compile index 35]
+*** Error: NON_EXISTING_PORT: Non existing port 'img_done' of module 'class_top'
+    at line 373 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:373 [compile index 35]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'u_class_top' of module 'class_top' is missing port connection to input 'init_done, x_w, resetessen'
+    at line 352 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:352 [compile index 35]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'model_params' of '18-bit' type from 'w_model_params' of '19-bit' type
+    at line 357 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:357 [compile index 35]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'tdata' of '32-bit' type from 'w_tdata' of '128-bit' type
+    at line 359 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:359 [compile index 35]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'bram_addr_a' of '15-bit' type from 'bram_addr_a' of '8-bit' type
+    at line 371 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:371 [compile index 35]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'bram_addr_a2' of '15-bit' type from 'bram_addr_a2' of '8-bit' type
+    at line 372 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:372 [compile index 35]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'model_params' of '18-bit' type from 'model_parameter' of '32-bit' type
+    at line 375 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:375 [compile index 51]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'control' of '2-bit' type from '3'b000' of '3-bit' type
+    at line 158 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:158 [compile index 51]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'ahb_hrdata' of '32-bit' type from '{8'd0, stream_state, weight_cn...' of '30-bit' type
+    at line 349 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:349 [compile index 51]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'ahb_hrdata' of '32-bit' type from '{16'd0, last_addr}' of '48-bit' type
+    at line 355 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:355 [compile index 51]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'img_width_count' of '7-bit' type from '- 1' of '32-bit' type
+    at line 129 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/buffer.v:129 [compile index 16]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'img_width_count_nxt' of '6-bit' type from '- 1' of '32-bit' type
+    at line 143 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/my_buffer.v:143 [compile index 29]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'clause' of '182-bit' type from 'clause_write' of '256-bit' type
+    at line 75 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:75 [compile index 42]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'patch_rule_1_nxt[11 : 8]' of '4-bit' type from 'clause[55 : 51]' of '5-bit' type
+    at line 177 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:177 [compile index 42]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'Ypos_mask_nxt' of '28-bit' type from '1'b0' of '1-bit' type
+    at line 208 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:208 [compile index 42]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'Xpos_mask_nxt' of '28-bit' type from '1'b0' of '1-bit' type
+    at line 209 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:209 [compile index 42]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'nYpos_mask_nxt' of '28-bit' type from '1'b0' of '1-bit' type
+    at line 210 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:210 [compile index 42]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'nXpos_mask_nxt' of '28-bit' type from '1'b0' of '1-bit' type
+    at line 211 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:211 [compile index 42]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'clause_idx' of '8-bit' type from 'clause_no' of '9-bit' type
+    at line 145 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v:145 [compile index 47]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'temp_sum[ldx]' of '18-bit' type from 'add_result[ldx]' of '19-bit' type
+    at line 205 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v:205 [compile index 47]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'max_sum' of '18-bit' type from '- 1000' of '32-bit' type
+    at line 216 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v:216 [compile index 47]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'max_sum' of '18-bit' type from '- 1000' of '32-bit' type
+    at line 223 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v:223 [compile index 47]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'class_op' of '4-bit' type from 'kdx' of '32-bit' type
+    at line 231 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v:231 [compile index 47]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'data' of '32-bit' type from '{4'b0000, 18'b1010_10001100_00...' of '22-bit' type
+    at line 241 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:241 [compile index 53]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'data' of '32-bit' type from '{4'b0000, 32'h1}' of '36-bit' type
+    at line 270 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:270 [compile index 53]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'data' of '32-bit' type from '{4'b0000, 32'h0}' of '36-bit' type
+    at line 273 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:273 [compile index 53]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'data' of '32-bit' type from '{4'b0000, 18'b1010_10001100_00...' of '22-bit' type
+    at line 274 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:274 [compile index 53]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'k_x3_nxt' of '8-bit' type from '{2'b0, (k * 3'd3)}' of '5-bit' type
+    at line 81 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v:81 [compile index 36]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'k_x5_nxt' of '8-bit' type from '{3'b0, (3'd5 * k)}' of '6-bit' type
+    at line 82 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v:82 [compile index 36]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'k_x6_nxt' of '8-bit' type from '{3'b0, (3'd6 * k)}' of '6-bit' type
+    at line 83 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v:83 [compile index 36]
+*** Warning: WIDTH_MISMATCH_PADDING: Assignment to 'k_x7_nxt' of '8-bit' type from '{4'b0, (3'd7 * k)}' of '7-bit' type
+    at line 84 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v:84 [compile index 36]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'conv_unit[iii][jjj]' of '1-bit' type from '7'b0' of '7-bit' type
+    at line 35 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/Convolution.v:35 [compile index 34]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'patch_size' of '3-bit' type and item expression '3' of '32-bit' type
+    at line 145 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/Convolution.v:145 [compile index 34]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'patch_size' of '3-bit' type and item expression '5' of '32-bit' type
+    at line 146 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/Convolution.v:146 [compile index 34]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'patch_size' of '3-bit' type and item expression '7' of '32-bit' type
+    at line 147 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/Convolution.v:147 [compile index 34]
+*** Warning: UNELABORATED_MODULE: Module 'work.Convolution' is not elaborated
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v:3 [compile index 1]
+*** Warning: UNELABORATED_MODULE: Module 'work.Convolution' is not elaborated
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/Convolution.v:3 [compile index 14]
+*** Warning: UNELABORATED_MODULE: Module 'work.Convolution' is not elaborated
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/Convolution.v:3 [compile index 24]
+*** Warning: UNELABORATED_MODULE: Module 'work.addr_gen' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v:22 [compile index 2]
+*** Warning: UNELABORATED_MODULE: Module 'work.addr_gen' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/addr_gen.v:22 [compile index 15]
+*** Warning: UNELABORATED_MODULE: Module 'work.addr_gen' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/addr_gen.v:22 [compile index 25]
+*** Warning: UNELABORATED_MODULE: Module 'work.ahb_ip_wrapper_dma_irq2' is not elaborated
+    at line 1 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:1 [compile index 3]
+*** Warning: UNELABORATED_MODULE: Module 'work.class_top' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v:23 [compile index 5]
+*** Warning: UNELABORATED_MODULE: Module 'work.class_top' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:22 [compile index 17]
+*** Warning: UNELABORATED_MODULE: Module 'work.class_top' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/class_top.v:23 [compile index 26]
+*** Warning: UNELABORATED_MODULE: Module 'work.class_top' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v:22 [compile index 40]
+*** Warning: UNELABORATED_MODULE: Module 'work.conv_arch' is not elaborated
+    at line 33 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:33 [compile index 6]
+*** Warning: UNELABORATED_MODULE: Module 'work.conv_arch' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:23 [compile index 18]
+*** Warning: UNELABORATED_MODULE: Module 'work.conv_arch' is not elaborated
+    at line 33 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v:33 [compile index 27]
+*** Warning: UNELABORATED_MODULE: Module 'work.conv_enable_generation' is not elaborated
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v:21 [compile index 7]
+*** Warning: UNELABORATED_MODULE: Module 'work.conv_enable_generation' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_enable_generation.v:23 [compile index 19]
+*** Warning: UNELABORATED_MODULE: Module 'work.conv_enable_generation' is not elaborated
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_enable_generation.v:21 [compile index 28]
+*** Warning: UNELABORATED_MODULE: Module 'work.my_buffer' is not elaborated
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v:21 [compile index 8]
+*** Warning: UNELABORATED_MODULE: Module 'work.processor_en' is not elaborated
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v:30 [compile index 9]
+*** Warning: UNELABORATED_MODULE: Module 'work.processor_en' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/processor_en.v:23 [compile index 20]
+*** Warning: UNELABORATED_MODULE: Module 'work.processor_en' is not elaborated
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/processor_en.v:30 [compile index 30]
+*** Warning: UNELABORATED_MODULE: Module 'work.remapunit' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v:22 [compile index 10]
+*** Warning: UNELABORATED_MODULE: Module 'work.remapunit' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v:22 [compile index 21]
+*** Warning: UNELABORATED_MODULE: Module 'work.remapunit' is not elaborated
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v:22 [compile index 31]
+*** Warning: UNELABORATED_MODULE: Module 'work.top' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v:23 [compile index 12]
+*** Warning: UNELABORATED_MODULE: Module 'work.top' is not elaborated
+    at line 7 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:7 [compile index 22]
+*** Warning: UNELABORATED_MODULE: Module 'work.top' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/top.v:23 [compile index 32]
+*** Warning: UNELABORATED_MODULE: Module 'work.weight_adder' is not elaborated
+    at line 2 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v:2 [compile index 13]
+*** Warning: UNELABORATED_MODULE: Module 'work.weight_adder' is not elaborated
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/weight_adder.v:23 [compile index 23]
+*** Warning: UNELABORATED_MODULE: Module 'work.weight_adder' is not elaborated
+    at line 2 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/weight_adder.v:2 [compile index 33]
+*** Warning: UNELABORATED_MODULE: Module 'work.buffer' is not elaborated
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/buffer.v:21 [compile index 39]
+*** Warning: UNELABORATED_MODULE: Module 'work.glbl' is not elaborated
+    at line 6 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:6 [compile index 54]
+Performing mixed post full build step (VLOG - RD) [9 ms] ...
+Performing mixed post full build step (VLOG - US) [101 ms] ...
+*** Warning: DUPLICATE_MODULE: Duplicate module 'Convolution', already declared
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/Convolution.v:3 [compile index 14]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'Convolution', already declared
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/Convolution.v:3 [compile index 24]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'Convolution', already declared
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/Convolution.v
+    at line 3 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/Convolution.v:3 [compile index 34]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'addr_gen', already declared
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/addr_gen.v:22 [compile index 15]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'addr_gen', already declared
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/addr_gen.v:22 [compile index 25]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'addr_gen', already declared
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v:22 [compile index 36]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'class_top', already declared
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:22 [compile index 17]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'class_top', already declared
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/class_top.v:23 [compile index 26]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'class_top', already declared
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v:22 [compile index 40]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'class_top', already declared
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:23 [compile index 52]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'conv_arch', already declared
+    at line 33 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:23 [compile index 18]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'conv_arch', already declared
+    at line 33 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v
+    at line 33 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v:33 [compile index 27]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'conv_arch', already declared
+    at line 33 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:21 [compile index 42]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'conv_enable_generation', already declared
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_enable_generation.v:23 [compile index 19]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'conv_enable_generation', already declared
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_enable_generation.v:21 [compile index 28]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'conv_enable_generation', already declared
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_enable_generation.v
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_enable_generation.v:21 [compile index 43]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'my_buffer', already declared
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/my_buffer.v:21 [compile index 29]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'processor_en', already declared
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/processor_en.v:23 [compile index 20]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'processor_en', already declared
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/processor_en.v:30 [compile index 30]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'processor_en', already declared
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/processor_en.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/processor_en.v:23 [compile index 45]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'remapunit', already declared
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v:22 [compile index 21]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'remapunit', already declared
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v:22 [compile index 31]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'remapunit', already declared
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/remapunit.v:22 [compile index 46]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'top', already declared
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v
+    at line 7 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:7 [compile index 22]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'top', already declared
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/top.v:23 [compile index 32]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'top', already declared
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v
+    at line 7 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/top.v:7 [compile index 47]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'weight_adder', already declared
+    at line 2 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/weight_adder.v:23 [compile index 23]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'weight_adder', already declared
+    at line 2 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v
+    at line 2 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/weight_adder.v:2 [compile index 33]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'weight_adder', already declared
+    at line 2 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/weight_adder.v
+    at line 2 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weight_adder.v:2 [compile index 48]
+*** Warning: DUPLICATE_MODULE: Duplicate module 'buffer', already declared
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/buffer.v
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/buffer.v:21 [compile index 39]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'WIDTH' is never used
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v:23 [compile index 2]
+*** Warning: SIGNAL_NEVER_READ: Signal 'clause_act_nxt' is never read
+    at line 53 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/addr_gen.v:53 [compile index 2]
+*** Warning: SIGNAL_NEVER_USED: Signal 'done_rmu' is never used
+    at line 32 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/addr_gen.v:32 [compile index 15]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'WIDTH' is never used
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/addr_gen.v:23 [compile index 25]
+*** Warning: SIGNAL_NEVER_READ: Signal 'clause_act_nxt' is never read
+    at line 53 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/addr_gen.v:53 [compile index 25]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'WIDTH' is never used
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v:23 [compile index 36]
+*** Warning: SIGNAL_NEVER_USED: Signal 'rst' is never used
+    at line 28 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/addr_gen.v:28 [compile index 36]
+*** Warning: SIGNAL_NEVER_READ: Signal 'clause_write' is never read
+    at line 44 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:44 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'weight_write' is never read
+    at line 45 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:45 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'imagedata' is never read
+    at line 46 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:46 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'x_imag_addr' is never read
+    at line 48 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:48 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'model_parameter' is never read
+    at line 49 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:49 [compile index 3]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'ip_final_answer' is never written
+    at line 50 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:50 [compile index 3]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'ip_computation_done' is never written
+    at line 51 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:51 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ahb_hwrite_r' is never read
+    at line 61 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:61 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ahb_hsel_r' is never read
+    at line 62 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:62 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ahb_htrans_r' is never read
+    at line 63 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:63 [compile index 3]
+*** Warning: SIGNAL_RESET_BUT_NOT_DRIVEN: Signal 'ahb_hwrite_r' is reset but not driven
+    at line 68 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:68 [compile index 3]
+*** Warning: SIGNAL_RESET_BUT_NOT_DRIVEN: Signal 'ahb_htrans_r' is reset but not driven
+    at line 70 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:70 [compile index 3]
+*** Warning: SIGNAL_NOT_RESET: Signal 'wcyc_r' is not reset
+    at line 78 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:78 [compile index 3]
+*** Warning: SIGNAL_NOT_RESET: Signal 'rcyc_r' is not reset
+    at line 79 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:79 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'weight_stream_flag' is never read
+    at line 141 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:141 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'clause_stream_flag' is never read
+    at line 142 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:142 [compile index 3]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_key128' is not recommended
+    at line 289 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:289 [compile index 3]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_ip128' is not recommended
+    at line 289 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:289 [compile index 3]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_op128' is not recommended
+    at line 289 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:289 [compile index 3]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_error' is not recommended
+    at line 289 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/ahb_ip_wrapper_dma_irq2.v:289 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'ahb_hprot' is never used
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:22 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CTRL_KEYOK_BIT' is never used
+    at line 88 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:88 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CTRL_VALID_BIT' is never used
+    at line 89 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:89 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'STAT_KEYREQ_BIT' is never used
+    at line 96 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:96 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'STAT_INPREQ_BIT' is never used
+    at line 97 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:97 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'STAT_OUTREQ_BIT' is never used
+    at line 98 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:98 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_KEY_BASE' is never used
+    at line 128 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:128 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_KEY0' is never used
+    at line 129 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:129 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_KEY3' is never used
+    at line 130 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:130 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_KEY7' is never used
+    at line 131 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:131 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_IBUF_BASE' is never used
+    at line 133 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:133 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_IBUF_0' is never used
+    at line 134 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:134 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_IBUF_3' is never used
+    at line 135 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:135 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_OBUF_BASE' is never used
+    at line 137 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:137 [compile index 4]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'ADDR_OBUF_3' is never used
+    at line 138 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:138 [compile index 4]
+*** Warning: SIGNAL_NEVER_READ: Signal 'key128_be' is never read (connected to sub-instance output port)
+    at line 292 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:292 [compile index 4]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ip128_le' is never read (connected to sub-instance output port)
+    at line 317 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:317 [compile index 4]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'op128_be' is never written
+    at line 343 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:343 [compile index 4]
+*** Warning: SIGNAL_NEVER_READ: Signal 'aes128_encode' is never read
+    at line 364 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:364 [compile index 4]
+*** Warning: SIGNAL_NEVER_READ: Signal 'aes256_keysize' is never read
+    at line 365 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:365 [compile index 4]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'aes_ready' is never written
+    at line 369 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:369 [compile index 4]
+*** Warning: SIGNAL_NEVER_USED: Signal 'aes_valid' is never used
+    at line 370 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:370 [compile index 4]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_key128' is not recommended
+    at line 429 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:429 [compile index 4]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_ip128' is not recommended
+    at line 429 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:429 [compile index 4]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_op128' is not recommended
+    at line 429 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:429 [compile index 4]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'irq_error' is not recommended
+    at line 429 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.srcs/sources_1/new/soclabs_ahb_aes128_ctrl.v:429 [compile index 4]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 59 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v:59 [compile index 5]
+*** Warning: SIGNAL_NEVER_USED: Signal 'idx' is never used
+    at line 61 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v:61 [compile index 5]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'bram_img_addr_w' using `default_nettype set to wire
+    at line 84 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v:84 [compile index 5]
+*** Warning: SIGNAL_NEVER_READ: Signal 'bram_img_addr_w' is never read
+    at line 84 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v:84 [compile index 5]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'rstb' using `default_nettype set to wire
+    at line 86 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v:86 [compile index 5]
+*** Warning: SIGNAL_NEVER_READ: Signal 'rstb' is never read
+    at line 86 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/class_top.v:86 [compile index 5]
+*** Warning: SIGNAL_NEVER_USED: Signal 'tkeep' is never used
+    at line 37 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:37 [compile index 17]
+*** Warning: SIGNAL_NEVER_USED: Signal 'tlast' is never used
+    at line 38 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:38 [compile index 17]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 64 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:64 [compile index 17]
+*** Warning: SIGNAL_NEVER_USED: Signal 'idx' is never used
+    at line 66 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:66 [compile index 17]
+*** Warning: INTERNAL_GENERATED_RESET: Reset signal 'rst' is not an input port
+    at line 97 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:97 [compile index 17]
+*** Warning: SIGNAL_RESET_BUT_NOT_DRIVEN: Signal 'i' is reset but not driven
+    at line 98 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:98 [compile index 17]
+*** Warning: INTERNAL_GENERATED_RESET: Reset signal 'rst' is not an input port
+    at line 162 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:162 [compile index 17]
+*** Warning: SIGNAL_NOT_RESET: Signal 'class_op' is not reset
+    at line 182 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:182 [compile index 17]
+*** Warning: SIGNAL_NOT_RESET: Signal 'total_memory' is not reset
+    at line 185 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/class_top.v:185 [compile index 17]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 59 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/class_top.v:59 [compile index 26]
+*** Warning: SIGNAL_NEVER_USED: Signal 'idx' is never used
+    at line 61 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/class_top.v:61 [compile index 26]
+*** Warning: SIGNAL_NEVER_USED: Signal 'tkeep' is never used
+    at line 37 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v:37 [compile index 40]
+*** Warning: SIGNAL_NEVER_USED: Signal 'tlast' is never used
+    at line 38 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v:38 [compile index 40]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 61 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v:61 [compile index 40]
+*** Warning: SIGNAL_NEVER_USED: Signal 'idx' is never used
+    at line 63 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/class_top.v:63 [compile index 40]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 59 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:59 [compile index 52]
+*** Warning: SIGNAL_NEVER_USED: Signal 'idx' is never used
+    at line 61 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:61 [compile index 52]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'bram_img_addr_w' using `default_nettype set to wire
+    at line 84 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:84 [compile index 52]
+*** Warning: SIGNAL_NEVER_READ: Signal 'bram_img_addr_w' is never read
+    at line 84 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:84 [compile index 52]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'rstb' using `default_nettype set to wire
+    at line 86 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:86 [compile index 52]
+*** Warning: SIGNAL_NEVER_READ: Signal 'rstb' is never read
+    at line 86 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/class_topp.v:86 [compile index 52]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLAUSEN' is never used
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:40 [compile index 6]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLASSN' is never used
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:40 [compile index 6]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLAUSE_WIDTH' is never used
+    at line 41 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:41 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 'i' is never used
+    at line 75 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:75 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 'ldx' is never used
+    at line 75 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:75 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 'idx' is never used
+    at line 75 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:75 [compile index 6]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'patch_size' to 'patch_size_out'
+    at line 95 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:95 [compile index 6]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'stride' to 'stride_out'
+    at line 96 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/conv_arch.v:96 [compile index 6]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLAUSEN' is never used
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:30 [compile index 18]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLASSN' is never used
+    at line 30 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:30 [compile index 18]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'bclause_op' is never written
+    at line 49 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:49 [compile index 18]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'patch_size' to 'patch_size_out'
+    at line 65 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:65 [compile index 18]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'stride' to 'stride_out'
+    at line 66 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:66 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'Xmatch' is not reset
+    at line 97 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:97 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'Ymatch' is not reset
+    at line 98 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:98 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'nypos' is not reset
+    at line 107 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:107 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'nxpos' is not reset
+    at line 126 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:126 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'patch_rule_1' is not reset
+    at line 128 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:128 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'patch_neg_rule_1' is not reset
+    at line 129 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:129 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'nYpos_mask' is not reset
+    at line 186 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:186 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'nXpos_mask' is not reset
+    at line 187 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:187 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'clause_done' is not reset
+    at line 230 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:230 [compile index 18]
+*** Warning: SIGNAL_NOT_RESET: Signal 'clause_op' is not reset
+    at line 233 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:233 [compile index 18]
+*** Warning: INTERNAL_GENERATED_RESET: Reset signal 'rst_n' is not an input port
+    at line 256 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/conv_arch.v:256 [compile index 18]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLAUSEN' is never used
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v:40 [compile index 27]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLASSN' is never used
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v:40 [compile index 27]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLAUSE_WIDTH' is never used
+    at line 41 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v:41 [compile index 27]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'patch_size' to 'patch_size_out'
+    at line 95 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v:95 [compile index 27]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'stride' to 'stride_out'
+    at line 96 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/conv_arch.v:96 [compile index 27]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLAUSEN' is never used
+    at line 28 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:28 [compile index 42]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'CLASSN' is never used
+    at line 28 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:28 [compile index 42]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'patch_size' to 'patch_size_out'
+    at line 64 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:64 [compile index 42]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'stride' to 'stride_out'
+    at line 65 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_arch.v:65 [compile index 42]
+*** Warning: SIGNAL_NEVER_USED: Signal 'rst' is never used
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/conv_enable_generation.v:21 [compile index 43]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'MAX_KERNEL_SIZE' is never used
+    at line 25 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v:25 [compile index 8]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'pixel_in' to 'pixel_out'
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/my_buffer.v:40 [compile index 8]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'MAX_KERNEL_SIZE' is never used
+    at line 25 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/my_buffer.v:25 [compile index 29]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'pixel_in' to 'pixel_out'
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/my_buffer.v:40 [compile index 29]
+*** Warning: SIGNAL_NOT_RESET: Signal 'p_en_rmu' is not reset
+    at line 286 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/processor_en.v:286 [compile index 20]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 42 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v:42 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'po1x1' is never used
+    at line 46 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v:46 [compile index 10]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'p_en' is not recommended
+    at line 55 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v:55 [compile index 10]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'done' is not recommended
+    at line 155 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/remapunit.v:155 [compile index 10]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p_en' is never written
+    at line 24 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v:24 [compile index 21]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p_en_rmu' is never written (connected to sub-instance input port)
+    at line 45 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v:45 [compile index 21]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'po1x1' is never written
+    at line 46 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v:46 [compile index 21]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'p_en' is not recommended
+    at line 49 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/remapunit.v:49 [compile index 21]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 42 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v:42 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'po1x1' is never used
+    at line 46 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v:46 [compile index 31]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'p_en' is not recommended
+    at line 55 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v:55 [compile index 31]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'done' is not recommended
+    at line 155 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/remapunit.v:155 [compile index 31]
+*** Warning: SIGNAL_NEVER_USED: Signal 'l' is never used
+    at line 42 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/remapunit.v:42 [compile index 46]
+*** Warning: SIGNAL_NEVER_USED: Signal 'po1x1' is never used
+    at line 46 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/remapunit.v:46 [compile index 46]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'p_en' is not recommended
+    at line 49 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/remapunit.v:49 [compile index 46]
+*** Warning: OUTPUT_PORT_READ: Reading from output port 'done' is not recommended
+    at line 137 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/remapunit.v:137 [compile index 46]
+*** Warning: SIGNAL_NEVER_READ: Signal 'count' is never read
+    at line 26 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:26 [compile index 11]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'bram_addr_a' is never written
+    at line 28 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:28 [compile index 11]
+*** Warning: SIGNAL_NEVER_READ: Signal 'test' is never read
+    at line 38 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:38 [compile index 11]
+*** Warning: INTERNAL_GENERATED_CLOCK: Clock signal 'clk' is not an input port
+    at line 178 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:178 [compile index 11]
+*** Warning: INTERNAL_GENERATED_CLOCK: Clock signal 'clk' is not an input port
+    at line 323 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:323 [compile index 11]
+*** Warning: INTERNAL_GENERATED_CLOCK: Clock signal 'tready' is not an input port
+    at line 454 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/testbench.v:454 [compile index 11]
+*** Warning: SIGNAL_NEVER_USED: Signal 'm' is never used
+    at line 86 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v:86 [compile index 12]
+*** Warning: SIGNAL_NEVER_USED: Signal 'fd' is never used
+    at line 167 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v:167 [compile index 12]
+*** Warning: SIGNAL_NEVER_USED: Signal 'i' is never used
+    at line 168 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v:168 [compile index 12]
+*** Warning: SIGNAL_NEVER_USED: Signal 'b' is never used
+    at line 168 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v:168 [compile index 12]
+*** Warning: SIGNAL_NEVER_READ: Signal 'valid' is never read
+    at line 392 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/top.v:392 [compile index 12]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'done_seen' using `default_nettype set to wire
+    at line 43 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:43 [compile index 22]
+*** Warning: SIGNAL_NEVER_READ: Signal 'done_seen' is never read
+    at line 43 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:43 [compile index 22]
+*** Warning: SIGNAL_NEVER_USED: Signal 'img_count' is never used
+    at line 62 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:62 [compile index 22]
+*** Warning: INTERNAL_GENERATED_RESET: Reset signal 'reset' is not an input port
+    at line 70 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:70 [compile index 22]
+*** Warning: INTERNAL_GENERATED_RESET: Reset signal 'reset' is not an input port
+    at line 149 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:149 [compile index 22]
+*** Warning: SIGNAL_NOT_RESET: Signal 'class_op' is not reset
+    at line 156 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:156 [compile index 22]
+*** Warning: SIGNAL_NOT_RESET: Signal 'done' is not reset
+    at line 160 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:160 [compile index 22]
+*** Warning: SIGNAL_NEVER_READ: Signal 'id_bus' is never read
+    at line 185 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/top.v:185 [compile index 22]
+*** Warning: SIGNAL_NEVER_READ: Signal 'valid' is never read
+    at line 392 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/top.v:392 [compile index 32]
+*** Warning: SIGNAL_NEVER_USED: Signal 'tcomp' is never used
+    at line 36 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/weight_adder.v:36 [compile index 23]
+*** Warning: SIGNAL_NEVER_READ: Signal 'idx_w' is never read
+    at line 16 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL_verified/weight_adder.v:16 [compile index 33]
+*** Warning: SIGNAL_NEVER_USED: Signal 'rst' is never used
+    at line 6 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/weight_adder.v:6 [compile index 48]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'MAX_KERNEL_SIZE' is never used
+    at line 27 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/buffer.v:27 [compile index 16]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'pixel_in' to 'pixel_out'
+    at line 44 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RTL Files/buffer.v:44 [compile index 16]
+*** Warning: SIGNAL_NEVER_USED: Signal 'rst' is never used
+    at line 21 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/buffer.v:21 [compile index 39]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'MAX_KERNEL_SIZE' is never used
+    at line 25 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/buffer.v:25 [compile index 39]
+*** Warning: FEEDTHROUGH_DETECTED: Feedthrough from 'pixel_in' to 'pixel_out'
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/buffer.v:40 [compile index 39]
+*** Warning: SIGNAL_NEVER_READ: Signal 'w_acc_input_done_pulse' is never read (connected to sub-instance output port)
+    at line 91 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:91 [compile index 35]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'img_done' is never written (connected to sub-instance input port)
+    at line 92 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:92 [compile index 35]
+*** Warning: SIGNAL_NEVER_READ: Signal 'w_tvalid' is never read (connected to sub-instance output port)
+    at line 97 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:97 [compile index 35]
+*** Warning: SIGNAL_NEVER_READ: Signal 'w_tlast' is never read (connected to sub-instance output port)
+    at line 98 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:98 [compile index 35]
+*** Warning: SIGNAL_NEVER_READ: Signal 'w_tkeep' is never read
+    at line 102 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:102 [compile index 35]
+*** Warning: SIGNAL_NEVER_READ: Signal 'weights_clauses_data_done' is never read (connected to sub-instance output port)
+    at line 122 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/accel_subsystem_top.v:122 [compile index 35]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'INIT_FILE' is never used
+    at line 4 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/blk_sram.v:4 [compile index 38]
+*** Warning: SIGNAL_NEVER_USED: Signal 'reset_n' is never used
+    at line 7 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/blk_sram.v:7 [compile index 38]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clkb' is never used
+    at line 13 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/blk_sram.v:13 [compile index 38]
+*** Warning: SIGNAL_NEVER_USED: Signal 'enb' is never used
+    at line 14 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/blk_sram.v:14 [compile index 38]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'IMAGE_MODE' is never used
+    at line 6 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/Working_SS_RTLs/image_glue_logic.v:6 [compile index 44]
+*** Warning: SIGNAL_NEVER_USED: Signal 'drq_ipdma128' is never used
+    at line 24 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:24 [compile index 51]
+*** Warning: SIGNAL_NEVER_USED: Signal 'drq_opdma128' is never used
+    at line 26 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:26 [compile index 51]
+*** Warning: SIGNAL_NEVER_USED: Signal 'irq_key128' is never used
+    at line 32 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:32 [compile index 51]
+*** Warning: SIGNAL_NEVER_USED: Signal 'irq_ip128' is never used
+    at line 33 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:33 [compile index 51]
+*** Warning: SIGNAL_NEVER_USED: Signal 'irq_op128' is never used
+    at line 34 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:34 [compile index 51]
+*** Warning: SIGNAL_NEVER_USED: Signal 'irq_error' is never used
+    at line 35 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:35 [compile index 51]
+*** Warning: SIGNAL_NEVER_READ: Signal 'x_imag_addr' is never read
+    at line 48 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:48 [compile index 51]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ahb_hwrite_r' is never read
+    at line 61 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:61 [compile index 51]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ahb_htrans_r' is never read
+    at line 63 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:63 [compile index 51]
+*** Warning: SIGNAL_RESET_BUT_NOT_DRIVEN: Signal 'ahb_hwrite_r' is reset but not driven
+    at line 68 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:68 [compile index 51]
+*** Warning: SIGNAL_RESET_BUT_NOT_DRIVEN: Signal 'ahb_htrans_r' is reset but not driven
+    at line 70 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:70 [compile index 51]
+*** Warning: SIGNAL_NOT_RESET: Signal 'wcyc_r' is not reset
+    at line 78 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:78 [compile index 51]
+*** Warning: SIGNAL_NOT_RESET: Signal 'rcyc_r' is not reset
+    at line 79 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:79 [compile index 51]
+*** Warning: SIGNAL_NEVER_READ: Signal 'image_ready' is never read
+    at line 133 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:133 [compile index 51]
+*** Warning: SIGNAL_NEVER_READ: Signal 'weight_stream_flag' is never read
+    at line 143 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:143 [compile index 51]
+*** Warning: SIGNAL_NEVER_READ: Signal 'clause_stream_flag' is never read
+    at line 144 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:144 [compile index 51]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'last_addr' is never written
+    at line 151 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/ahb_ip_wrapper_dma_irq.v:151 [compile index 51]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ahb_hrdata' is never read (connected to sub-instance output port)
+    at line 35 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:35 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ahb_hresp' is never read (connected to sub-instance output port)
+    at line 36 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:36 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'drq_ipdma128' is never read (connected to sub-instance output port)
+    at line 39 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:39 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'drq_opdma128' is never read (connected to sub-instance output port)
+    at line 39 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:39 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'irq_key128' is never read (connected to sub-instance output port)
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:40 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'irq_ip128' is never read (connected to sub-instance output port)
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:40 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'irq_op128' is never read (connected to sub-instance output port)
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:40 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'irq_error' is never read (connected to sub-instance output port)
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:40 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'irq_merged' is never read (connected to sub-instance output port)
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:40 [compile index 53]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'clause_mem' is never written
+    at line 190 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:190 [compile index 53]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'weight_mem' is never written
+    at line 196 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:196 [compile index 53]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'image_mem' is never written
+    at line 202 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/tb_ahb_ip_wrapper.v:202 [compile index 53]
+*** Warning: SIGNAL_NEVER_READ: Signal 'GSR' is never read
+    at line 14 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:14 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'GTS' is never read
+    at line 15 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:15 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'GWE' is never used
+    at line 16 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:16 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'PRLD' is never read
+    at line 17 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:17 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'GRESTORE' is never read
+    at line 18 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:18 [compile index 54]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'p_up_tmp' is never written
+    at line 19 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:19 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'PLL_LOCKG' is never read
+    at line 20 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:20 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PROGB_GLBL' is never used
+    at line 22 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:22 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'CCLKO_GLBL' is never used
+    at line 23 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:23 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'FCSBO_GLBL' is never used
+    at line 24 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:24 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'DO_GLBL' is never used
+    at line 25 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:25 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'DI_GLBL' is never used
+    at line 26 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:26 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TDO_GLBL' is never used
+    at line 34 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:34 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TCK_GLBL' is never used
+    at line 35 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:35 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TDI_GLBL' is never used
+    at line 36 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:36 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TMS_GLBL' is never used
+    at line 37 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:37 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_TRST_GLBL' is never used
+    at line 38 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:38 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_CAPTURE_GLBL' is never used
+    at line 40 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:40 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_RESET_GLBL' is never used
+    at line 41 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:41 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_SHIFT_GLBL' is never used
+    at line 42 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:42 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_UPDATE_GLBL' is never used
+    at line 43 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:43 [compile index 54]
+*** Warning: SIGNAL_NEVER_USED: Signal 'JTAG_RUNTEST_GLBL' is never used
+    at line 44 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:44 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL1_GLBL' is never read
+    at line 46 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:46 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL2_GLBL' is never read
+    at line 47 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:47 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL3_GLBL' is never read
+    at line 48 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:48 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_SEL4_GLBL' is never read
+    at line 49 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:49 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO1_GLBL' is never read
+    at line 51 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:51 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO2_GLBL' is never read
+    at line 52 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:52 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO3_GLBL' is never read
+    at line 53 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:53 [compile index 54]
+*** Warning: SIGNAL_NEVER_READ: Signal 'JTAG_USER_TDO4_GLBL' is never read
+    at line 54 in /home/23EC01002/QuestaSimShortcut/WrapperInQuestaSim/working_tselinwrapper/SoC-Design-RConvCoTM-patch-4/RCTM_DV/after_vac_wrapper/after_vac_wrapper.sim/sim_1/behav/xsim/glbl.v:54 [compile index 54]
+*** Done mixed mode extension build [977 ms] ***
+*** Total build time [1s.588ms] ***
